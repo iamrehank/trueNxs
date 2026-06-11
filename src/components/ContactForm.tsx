@@ -263,7 +263,8 @@ export default function ContactForm({ inquiries, onAddInquiry, onOpenLocations }
           <img 
             alt="Corporate Map" 
             className="w-full h-full object-cover opacity-95 group-hover:scale-105 transition-all duration-700" 
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQzY8G24ZdORdi1BpHq8G-N7BLGuha7cb0yC5ti3M_LJMkx4q6RKEL3onu4_LzkQl-LXjAqh1xQFUGZkaClfRMQgNvXzCQSUK-dD5-YkdyBKMm-lmAP3uQubylBKoTw5okQJk09a9PXOiOivafZHi5UFh_j2xDPLdZViOs-F4gvDd-68YfZGjgjFIZbB07mjBHuJ0nKD3B2V3wDcS0syOsG36iWPfOP6jqk9xb54lRNyFPxqZTLmWdLK0YAqE7fQ80jqC6h-KypTU" 
+            src="/src/assets/images/corporate_map_1781205781835.jpg" 
+            referrerPolicy="no-referrer"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-slate-900/10 to-transparent"></div>
           

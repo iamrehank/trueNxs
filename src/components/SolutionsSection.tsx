@@ -1,7 +1,22 @@
 import { useState } from 'react';
 import { SERVICES } from '../data';
 import { ServiceItem } from '../types';
-import { ShieldCheck, Target, ArrowRight, Zap, RefreshCw, BarChart } from 'lucide-react';
+import { ShieldCheck, Target, ArrowRight, Zap, RefreshCw, BarChart, HeartHandshake, Calculator, TrendingUp, Cpu, Building } from 'lucide-react';
+
+function getServiceIcon(id: string) {
+  switch (id) {
+    case 'icare':
+      return <HeartHandshake className="w-8 h-8 text-[#d95f00] group-hover:scale-105 transition-transform" />;
+    case 'ifap':
+      return <Calculator className="w-8 h-8 text-cyan-700 group-hover:scale-105 transition-transform" />;
+    case 'ifin':
+      return <TrendingUp className="w-8 h-8 text-emerald-600 group-hover:scale-105 transition-transform" />;
+    case 'iapps':
+      return <Cpu className="w-8 h-8 text-indigo-600 group-hover:scale-105 transition-transform" />;
+    default:
+      return <Building className="w-8 h-8 text-slate-550 group-hover:scale-105 transition-transform" />;
+  }
+}
 
 interface SolutionsSectionProps {
   onOpenCalculator: () => void;
@@ -45,11 +60,7 @@ export default function SolutionsSection({ onOpenCalculator }: SolutionsSectionP
               )}
               
               <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center border border-slate-100 shadow-sm shrink-0 overflow-hidden">
-                <img 
-                  src={srv.logoUrl} 
-                  alt={srv.name} 
-                  className="w-8 h-8 object-contain group-hover:scale-105 transition-transform" 
-                />
+                {getServiceIcon(srv.id)}
               </div>
 
               <div>

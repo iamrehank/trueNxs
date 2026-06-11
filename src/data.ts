@@ -91,14 +91,14 @@ export const TEAM: TeamMember[] = [
   {
     name: 'Aditya Shah',
     role: 'Managing Director',
-    imageUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuC9lv66LiBRP6N5uyMpDerboT-quCksA-FrO5HlaWXxoRBRTTdl_1LEd-PTJlKddpCpdqrfcZMw3vd26JwbvhTpAllG8ryJoYh-_wAQmXhMoSbcio3xdhuRU1dbXpGLko7ziBVlC9p8vGp2UATrXI0i0dZvdO736xF1vksPjpsXYUDfQlj7CufXyH_o4bshRpMTxYlmzO4rz2HbzjEKeQqTkUPn-u_hGZEynkkMWCEEKprljPZPVdtYHwtDQsNkc-JhMyfjD4kco44',
+    imageUrl: '/src/assets/images/aditya_shah_1781205723085.jpg',
     bio: 'Aditya has over 20 years of leadership experience in strategic outsourcing, advising Fortune 500 enterprises on optimizing process efficiencies and institutional workflow migrations.',
     linkedin: '#'
   },
   {
     name: 'Nandini Verma',
     role: 'Chief Operations Officer',
-    imageUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCjG9xCAUs4o0rKkd7lpFYtDJp72oUiP42GqYhbz9CxIeUZYYOt6D28PrzCcLVdbdyMjuFK2CJmWP_gRWBp4eN7xo9RisSABG1P5M2fDhP5lEUh4REf06wXLKayJD8FV3NBTIOHMtCWt1JJwsJR1cITQqZsz1wvT6sihUrE9PRe20J2df59MLHZBEEPGf0tUaewgZUt7uhfAHS-yzaKeQF-bhfhjTHpPetFLqJlx4eBx7uW1PeUZ13qtmmo4HcXVmFKDjKM26Zwx3I',
+    imageUrl: '/src/assets/images/nandini_verma_1781205738884.jpg',
     bio: 'Nandini oversees the global delivery centers, ensuring rigorous conformance with international quality parameters (including ISO 9001 & ISO 27001) while scaling high-touch service queues.',
     linkedin: '#'
   }

@@ -22,9 +22,27 @@ import {
   ArrowUpRight,
   ExternalLink,
   Award,
-  Sparkles
+  Sparkles,
+  HeartHandshake,
+  Calculator,
+  Cpu
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+
+function getServiceIcon(id: string) {
+  switch (id) {
+    case 'icare':
+      return <HeartHandshake className="w-6 h-6 text-[#d95f00]" />;
+    case 'ifap':
+      return <Calculator className="w-6 h-6 text-cyan-700" />;
+    case 'ifin':
+      return <TrendingUp className="w-6 h-6 text-emerald-600" />;
+    case 'iapps':
+      return <Cpu className="w-6 h-6 text-indigo-600" />;
+    default:
+      return <Building className="w-6 h-6 text-slate-650" />;
+  }
+}
 
 export default function App() {
   // Navigation active state
@@ -299,7 +317,7 @@ export default function App() {
                       className="bg-white border border-slate-200/80 p-6 rounded-2xl shadow-sm hover:shadow-md hover:-translate-y-1 transition-all cursor-pointer group"
                     >
                       <div className="w-10 h-10 bg-slate-50 border border-slate-100 rounded-lg flex items-center justify-center mb-4 shrink-0 overflow-hidden">
-                        <img src={srv.logoUrl} alt={srv.name} className="w-6 h-6 object-contain" />
+                        {getServiceIcon(srv.id)}
                       </div>
                       <h4 className="font-sans font-bold text-sm text-slate-900 mb-2 group-hover:text-cyan-700 transition-colors">
                         {srv.name}
@@ -535,9 +553,10 @@ export default function App() {
                 {/* Image Placeholder hotlinked */}
                 <div className="lg:col-span-5 h-64 rounded-2xl overflow-hidden relative border border-slate-200">
                   <img 
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAb4O_RwM15-Q562PZBS5FQqqHJdwObO8pFaeDqPzpnvyu2rhYcEKuB3TVYfoogVUlXI_2WBUsP71TRN6La2cx51dNvf9EhX0xyId-fgqoPhTixsTVstDd8kpguoYzwch2OcCShEghAvDQHMinD9N_ynJxxXctO786hTwTcgh_pbUn9R87AkhTyk04PifX0rHQN_YGEFva_R7cbuT5CBTCutnTb7SWj-78lIGAEOPatJhSIWHzr7rCiZ1cChJK-8rJr6rVuV33a2mM" 
+                    src="/src/assets/images/corporate_csr_1781205765498.jpg" 
                     alt="Corporate CSR" 
                     className="w-full h-full object-cover"
+                    referrerPolicy="no-referrer"
                   />
                 </div>
 
