@@ -1,5 +1,3 @@
-export type ActiveTab = 'home' | 'solutions' | 'about' | 'contact';
-
 export interface ServiceItem {
   id: string;
   name: string;

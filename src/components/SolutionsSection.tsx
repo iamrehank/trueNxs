@@ -129,11 +129,7 @@ export default function SolutionsSection({ onOpenCalculator }: SolutionsSectionP
               Configure Cost Estimate
             </button>
             <a 
-              href="#quote-calc"
-              onClick={(e) => {
-                e.preventDefault();
-                alert(`Detailed workflow specifications for Trunex ${selectedSrv.name} comply with SOC2, GDPR, and ISO standards. Request an audit deck from our transition team.`);
-              }}
+              href="mailto:contact@trunex.com?subject=SLA%20Standards%20Inquiry%20-%20Trunex%20${selectedSrv.name}"
               className="border border-slate-205 text-slate-600 hover:border-slate-350 px-6 py-3.5 rounded-xl text-xs font-bold uppercase tracking-wider transition-all cursor-pointer"
             >
               Inquire SLA Standards
