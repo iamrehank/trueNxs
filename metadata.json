@@ -1,0 +1,6 @@
+{
+  "name": "Trunex BPO",
+  "description": "Corporate website and service portal for Trunex Global BPO solutions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
