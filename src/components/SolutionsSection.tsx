@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { SERVICES } from '../data';
 import { ServiceItem } from '../types';
 import { ShieldCheck, Target, ArrowRight, Zap, RefreshCw, BarChart, HeartHandshake, Calculator, TrendingUp, Cpu, Building } from 'lucide-react';
@@ -18,11 +19,8 @@ function getServiceIcon(id: string) {
   }
 }
 
-interface SolutionsSectionProps {
-  onOpenCalculator: () => void;
-}
-
-export default function SolutionsSection({ onOpenCalculator }: SolutionsSectionProps) {
+export default function SolutionsSection() {
+  const navigate = useNavigate();
   const [selectedSrv, setSelectedSrv] = useState<ServiceItem>(SERVICES[0]);
 
   return (
@@ -123,13 +121,13 @@ export default function SolutionsSection({ onOpenCalculator }: SolutionsSectionP
 
           <div className="pt-4 flex flex-wrap gap-4">
             <button
-              onClick={onOpenCalculator}
+              onClick={() => navigate('/contact')}
               className="bg-cyan-700 hover:bg-cyan-850 text-white px-6 py-3.5 rounded-xl text-xs font-bold uppercase tracking-wider transition-all shadow-md  cursor-pointer"
             >
               Configure Cost Estimate
             </button>
             <a 
-              href="mailto:contact@trunex.com?subject=SLA%20Standards%20Inquiry%20-%20Trunex%20${selectedSrv.name}"
+              href="mailto:contact@trunexbpo.com?subject=SLA%20Standards%20Inquiry%20-%20Trunex%20${selectedSrv.name}"
               className="border border-slate-205 text-slate-600 hover:border-slate-350 px-6 py-3.5 rounded-xl text-xs font-bold uppercase tracking-wider transition-all cursor-pointer"
             >
               Inquire SLA Standards

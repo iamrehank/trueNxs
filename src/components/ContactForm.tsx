@@ -1,15 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { Inquiry } from '../types';
 import { Mail, Phone, MapPin, Check, Send, Globe, Clock, Building, ArrowRight } from 'lucide-react';
 import { LOCATIONS } from '../data';
+import corporateMapImage from '../assets/images/corporate_map_1781205781835.jpg';
 
 interface ContactFormProps {
-  inquiries: Inquiry[];
   onAddInquiry: (inquiry: Omit<Inquiry, 'id' | 'date' | 'status'>) => void;
   onOpenLocations: () => void;
 }
 
-export default function ContactForm({ inquiries, onAddInquiry, onOpenLocations }: ContactFormProps) {
+export default function ContactForm({ onAddInquiry, onOpenLocations }: ContactFormProps) {
   // Form input states
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -168,28 +167,6 @@ export default function ContactForm({ inquiries, onAddInquiry, onOpenLocations }
           </form>
         )}
 
-        {/* Display Previous Submissions locally */}
-        {inquiries.length > 0 && (
-          <div className="mt-12 pt-8 border-t border-slate-100 space-y-4">
-            <h4 className="text-xs font-bold text-slate-700 uppercase tracking-widest">
-              Submitted in this Session ({inquiries.length})
-            </h4>
-            <div className="space-y-3 max-h-48 overflow-y-auto pr-2">
-              {inquiries.map((inq) => (
-                <div key={inq.id} className="p-4 bg-slate-50/70 border border-slate-100 rounded-lg text-xs space-y-1">
-                  <div className="flex justify-between items-center">
-                    <span className="font-bold text-slate-800">{inq.serviceInterest}</span>
-                    <span className="text-[10px] bg-indigo-50 text-indigo-700 px-2 py-0.5 rounded-full font-bold">
-                      {inq.status}
-                    </span>
-                  </div>
-                  <p className="text-slate-500 max-w-xl truncate">{inq.message}</p>
-                  <p className="text-[10px] text-slate-400">Lodged: {inq.date}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
       </div>
 
       {/* Info Cards Section */}
@@ -212,9 +189,8 @@ export default function ContactForm({ inquiries, onAddInquiry, onOpenLocations }
                   Address
                 </p>
                 <p className="text-slate-700 leading-relaxed text-sm">
-                  Amfotech IT Park, 5th Floor,<br />
-                  Road No.8 Wagle Industrial Estate,<br />
-                  Thane West, Maharashtra 400604
+                  302, Siddharth Tower, Station Road,<br />
+                  Kalyan West, Maharashtra 421301
                 </p>
               </div>
             </div>
@@ -226,8 +202,8 @@ export default function ContactForm({ inquiries, onAddInquiry, onOpenLocations }
                 <p className="font-sans font-bold text-[11px] text-slate-400 uppercase tracking-wider mb-1">
                   Phone Operations
                 </p>
-                <p className="text-slate-700 text-sm font-semibold">+91 (022) 5000 0555</p>
-                <p className="text-slate-500 text-xs">+91 70456 41234 (Escalations)</p>
+                <p className="text-slate-700 text-sm font-semibold">+91 (0251) 500 0123</p>
+                <p className="text-slate-500 text-xs">+91 98765 43210 (Escalations)</p>
               </div>
             </div>
 
@@ -238,7 +214,7 @@ export default function ContactForm({ inquiries, onAddInquiry, onOpenLocations }
                 <p className="font-sans font-bold text-[11px] text-slate-400 uppercase tracking-wider mb-1">
                   Legal Email
                 </p>
-                <p className="text-slate-700 text-sm font-semibold">contact@trunex.com</p>
+                <p className="text-slate-700 text-sm font-semibold">contact@trunexbpo.com</p>
               </div>
             </div>
           </div>
@@ -263,7 +239,7 @@ export default function ContactForm({ inquiries, onAddInquiry, onOpenLocations }
           <img 
             alt="Corporate Map" 
             className="w-full h-full object-cover opacity-95 group-hover:scale-105 transition-all duration-700" 
-            src="/src/assets/images/corporate_map_1781205781835.jpg" 
+            src={corporateMapImage}
             referrerPolicy="no-referrer"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-slate-900/10 to-transparent"></div>

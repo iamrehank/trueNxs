@@ -4,7 +4,6 @@ import { AnimatePresence } from 'motion/react';
 import { Inquiry } from './types';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import QuoteCalculator from './components/QuoteCalculator';
 import LocationDetails from './components/LocationDetails';
 import CareersPortal from './components/CareersPortal';
 import HomePage from './pages/HomePage';
@@ -16,7 +15,6 @@ import NotFoundPage from './pages/NotFoundPage';
 export default function App() {
   const location = useLocation();
 
-  const [isQuoteOpen, setIsQuoteOpen] = useState(false);
   const [isLocationsOpen, setIsLocationsOpen] = useState(false);
   const [isCareersOpen, setIsCareersOpen] = useState(false);
 
@@ -99,17 +97,16 @@ export default function App() {
         </div>
       )}
 
-      <Header onOpenQuote={() => setIsQuoteOpen(true)} />
+      <Header />
 
       <main id="main-content" className="flex-grow max-w-[1280px] mx-auto w-full px-6 md:px-12 py-12 md:py-16">
         <AnimatePresence mode="wait">
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="/solutions" element={<SolutionsPage onOpenQuote={() => setIsQuoteOpen(true)} />} />
+            <Route path="/solutions" element={<SolutionsPage />} />
             <Route path="/about" element={<AboutPage onOpenCareers={() => setIsCareersOpen(true)} />} />
             <Route path="/contact" element={
               <ContactPage
-                inquiries={inquiries}
                 onAddInquiry={handleAddInquiry}
                 onOpenLocations={() => setIsLocationsOpen(true)}
               />
@@ -120,13 +117,6 @@ export default function App() {
       </main>
 
       {/* Modals */}
-      {isQuoteOpen && (
-        <div className="fixed inset-0 bg-[#0f172a]/70 backdrop-blur-md flex items-center justify-center z-[100] p-4 md:p-6 overflow-y-auto animate-in fade-in duration-200">
-          <div className="max-w-4xl w-full">
-            <QuoteCalculator onSubmittingInquiry={handleAddInquiry} onClose={() => setIsQuoteOpen(false)} />
-          </div>
-        </div>
-      )}
       {isLocationsOpen && <LocationDetails onClose={() => setIsLocationsOpen(false)} />}
       {isCareersOpen && <CareersPortal onClose={() => setIsCareersOpen(false)} />}
 

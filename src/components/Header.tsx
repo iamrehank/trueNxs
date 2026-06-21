@@ -2,10 +2,6 @@ import { useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { Menu, X, ArrowUpRight, PhoneCall } from 'lucide-react';
 
-interface HeaderProps {
-  onOpenQuote: () => void;
-}
-
 const navItems = [
   { to: '/',          label: 'Home',       end: true },
   { to: '/solutions', label: 'Solutions',  end: false },
@@ -13,7 +9,7 @@ const navItems = [
   { to: '/contact',   label: 'Contact',    end: false },
 ];
 
-export default function Header({ onOpenQuote }: HeaderProps) {
+export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const navigate = useNavigate();
 
@@ -64,7 +60,7 @@ export default function Header({ onOpenQuote }: HeaderProps) {
             <span>Support</span>
           </button>
           <button
-            onClick={onOpenQuote}
+            onClick={() => handleNav('/contact')}
             className="bg-[#d95f00] hover:bg-[#b04d00] text-white px-5 py-2.5 rounded-lg text-sm font-semibold transition-all shadow-[0_2px_8px_rgba(217,95,0,0.25)] hover:shadow-[0_4px_12px_rgba(217,95,0,0.4)] hover:-translate-y-0.5 active:translate-y-0 cursor-pointer"
           >
             Get a Quote
@@ -73,7 +69,7 @@ export default function Header({ onOpenQuote }: HeaderProps) {
 
         {/* Mobile buttons */}
         <div className="flex items-center gap-3 md:hidden">
-          <button onClick={onOpenQuote} className="bg-[#d95f00] hover:bg-[#b04d00] text-white px-3.5 py-2 rounded-lg text-xs font-semibold transition-all shadow-sm">
+          <button onClick={() => handleNav('/contact')} className="bg-[#d95f00] hover:bg-[#b04d00] text-white px-3.5 py-2 rounded-lg text-xs font-semibold transition-all shadow-sm">
             Quote
           </button>
           <button
@@ -109,7 +105,7 @@ export default function Header({ onOpenQuote }: HeaderProps) {
                 <span>Contact Sales & Support</span>
               </button>
               <button
-                onClick={() => { setMobileMenuOpen(false); onOpenQuote(); }}
+                onClick={() => handleNav('/contact')}
                 className="bg-cyan-700 text-white w-full py-3.5 rounded-xl font-bold text-sm tracking-wide shadow-md flex items-center justify-center gap-1 hover:bg-cyan-800 transition-all"
               >
                 <span>Request Custom Quote</span>

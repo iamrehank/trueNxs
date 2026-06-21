@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { TEAM } from '../data';
-import { Users, ChevronDown, ArrowUpRight } from 'lucide-react';
+import { Users, ChevronDown, ArrowUpRight, Award, Clock, ShieldCheck, Zap } from 'lucide-react';
 import { motion } from 'motion/react';
+import corporateCsrImage from '../assets/images/corporate_csr_1781205765498.jpg';
 
 interface AboutPageProps {
   onOpenCareers: () => void;
@@ -29,29 +30,36 @@ export default function AboutPage({ onOpenCareers }: AboutPageProps) {
             Trunex BPO balances institutional trust with high-tech precision.
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">
-            Trunex represents the evolution of strategic process outsourcing. We align highly educated human assets across regional delivery nodes inside Thane West (India) and Manila (Philippines) with custom CRM pipelines and proprietary software automation tools.
+            Trunex represents the evolution of strategic process outsourcing. We align highly educated human assets from our delivery node in Kalyan West, Maharashtra, with custom CRM pipelines and proprietary software automation tools.
           </p>
           <p className="text-slate-600 text-sm leading-relaxed">
             Under standard compliance architectures, our operational lines are checked against rigorous SOC2 audit reviews, HIPAA security controls, and SEC XBRL financial report guidelines. We serve public multinational giants and high-growth consumer FinTech enterprises who require absolute service continuity.
           </p>
         </div>
 
-        <div className="lg:col-span-5 bg-white border border-slate-200/80 p-8 rounded-2xl relative shadow-sm">
-          <span className="text-[10px] font-bold text-slate-400 uppercase block mb-6">Service Quality Badges</span>
-          <div className="space-y-5">
-            {[
-              { title: 'ISO 9001 Alignment', desc: 'Sustained process auditing benchmarks.' },
-              { title: 'ISO 27001 Certified Vaults', desc: 'Secure data transit and information integrity.' },
-              { title: 'SOC2 Security Standard', desc: 'Strict operational safeguards and audit checks.' }
-            ].map((badge, idx) => (
-              <div key={idx} className="flex gap-3 text-xs">
-                <div className="w-5 h-5 bg-[#d95f00]/10 text-[#d95f00] rounded-full flex items-center justify-center shrink-0 font-bold">✓</div>
-                <div>
-                  <span className="font-bold text-slate-850 block">{badge.title}</span>
-                  <span className="text-slate-500">{badge.desc}</span>
+        <div className="lg:col-span-5">
+          <div className="bg-[#131b2e] text-white rounded-2xl p-8 space-y-6 border border-slate-800 relative overflow-hidden">
+            <div className="absolute -top-10 -right-10 w-40 h-40 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none" />
+            <div className="absolute bottom-0 left-0 w-32 h-32 bg-[#d95f00]/5 rounded-full blur-2xl pointer-events-none" />
+            <span className="text-[10px] font-bold text-cyan-400 uppercase tracking-widest">By The Numbers</span>
+            <div className="grid grid-cols-2 gap-3">
+              {[
+                { icon: <ShieldCheck size={15} className="text-cyan-400" />, value: '98.7%', label: 'SLA Adherence' },
+                { icon: <Clock size={15} className="text-[#d95f00]" />, value: '< 2 Hrs', label: 'Incident Resolution' },
+                { icon: <Zap size={15} className="text-emerald-400" />, value: '24 / 7', label: 'Round-the-Clock Ops' },
+                { icon: <Users size={15} className="text-cyan-400" />, value: '50+', label: 'Certified Specialists' },
+              ].map((stat, i) => (
+                <div key={i} className="p-4 bg-white/5 rounded-xl border border-white/8 space-y-2">
+                  <div className="flex items-center gap-1.5">{stat.icon}</div>
+                  <span className="text-2xl font-extrabold text-white block leading-none">{stat.value}</span>
+                  <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider block">{stat.label}</span>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
+            <div className="border-t border-slate-700/60 pt-5 flex items-start gap-2.5 text-xs text-slate-400">
+              <Award size={14} className="text-cyan-400 shrink-0 mt-0.5" />
+              <span>Independently audited under ISO 9001, ISO 27001 & SOC2 frameworks across all delivery centers.</span>
+            </div>
           </div>
         </div>
       </div>
@@ -120,13 +128,13 @@ export default function AboutPage({ onOpenCareers }: AboutPageProps) {
       {/* CSR */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         <div className="lg:col-span-5 h-64 rounded-2xl overflow-hidden relative border border-slate-200">
-          <img src="/src/assets/images/corporate_csr_1781205765498.jpg" alt="Corporate CSR" className="w-full h-full object-cover" />
+          <img src={corporateCsrImage} alt="Corporate CSR" className="w-full h-full object-cover" />
         </div>
         <div className="lg:col-span-7 space-y-6">
           <span className="text-[10px] font-bold text-cyan-700 tracking-wider uppercase block">Corporate Accountability</span>
           <h3 className="font-sans text-2xl font-bold text-slate-900 tracking-tight">Environmental Metrics & CSR Commits</h3>
           <p className="text-slate-600 text-sm leading-relaxed">
-            Trunex Global BPO enforces localized commitments to sustainable growth. We support high-speed public education computing labs inside urban clusters of Thane and Manila, equipping youth with digital process tools.
+            Trunex enforces localized commitments to sustainable growth. We support digital literacy initiatives inside the Kalyan-Dombivli urban cluster, equipping youth with modern process and technology tools.
           </p>
           <p className="text-slate-600 text-sm leading-relaxed">
             By scaling server deployments onto carbon-neutral cloud providers, we achieve cost reductions which are directly reflected in client SLAs, keeping overall energy overhead minimal.

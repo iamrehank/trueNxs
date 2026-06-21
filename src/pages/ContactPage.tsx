@@ -3,12 +3,11 @@ import ContactForm from '../components/ContactForm';
 import { motion } from 'motion/react';
 
 interface ContactPageProps {
-  inquiries: Inquiry[];
   onAddInquiry: (inquiry: Omit<Inquiry, 'id' | 'date' | 'status'>) => void;
   onOpenLocations: () => void;
 }
 
-export default function ContactPage({ inquiries, onAddInquiry, onOpenLocations }: ContactPageProps) {
+export default function ContactPage({ onAddInquiry, onOpenLocations }: ContactPageProps) {
   return (
     <motion.div
       key="contact"
@@ -29,7 +28,7 @@ export default function ContactPage({ inquiries, onAddInquiry, onOpenLocations }
           Have inquiries on CRM scalability, auditing compliance schedules, or automated ledger processing? Our transition staff are aligned to audit your requirements.
         </p>
       </div>
-      <ContactForm inquiries={inquiries} onAddInquiry={onAddInquiry} onOpenLocations={onOpenLocations} />
+      <ContactForm onAddInquiry={onAddInquiry} onOpenLocations={onOpenLocations} />
     </motion.div>
   );
 }

@@ -2,11 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import SolutionsSection from '../components/SolutionsSection';
 import { motion } from 'motion/react';
 
-interface SolutionsPageProps {
-  onOpenQuote: () => void;
-}
-
-export default function SolutionsPage({ onOpenQuote }: SolutionsPageProps) {
+export default function SolutionsPage() {
   const navigate = useNavigate();
 
   return (
@@ -18,7 +14,7 @@ export default function SolutionsPage({ onOpenQuote }: SolutionsPageProps) {
       transition={{ duration: 0.35 }}
       className="space-y-24"
     >
-      <SolutionsSection onOpenCalculator={onOpenQuote} />
+      <SolutionsSection />
 
       <div className="border-t border-slate-200/80 pt-16">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -54,7 +50,7 @@ export default function SolutionsPage({ onOpenQuote }: SolutionsPageProps) {
               </p>
             </div>
             <button
-              onClick={onOpenQuote}
+              onClick={() => navigate('/contact')}
               className="bg-cyan-700 hover:bg-cyan-850 text-white w-full py-3.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all shadow-sm text-center cursor-pointer"
             >
               Interactive Quote Calculator

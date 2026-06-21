@@ -1,4 +1,6 @@
 import { ServiceItem, TeamMember, GlobalLocation, JobOpening } from './types';
+import adityaImage from './assets/images/aditya_shah_1781205723085.jpg';
+import nandiniImage from './assets/images/nandini_verma_1781205738884.jpg';
 
 export const SERVICES: ServiceItem[] = [
   {
@@ -91,14 +93,14 @@ export const TEAM: TeamMember[] = [
   {
     name: 'Aditya Shah',
     role: 'Managing Director',
-    imageUrl: '/src/assets/images/aditya_shah_1781205723085.jpg',
+    imageUrl: adityaImage,
     bio: 'Aditya has over 20 years of leadership experience in strategic outsourcing, advising Fortune 500 enterprises on optimizing process efficiencies and institutional workflow migrations.',
     linkedin: '#'
   },
   {
     name: 'Nandini Verma',
     role: 'Chief Operations Officer',
-    imageUrl: '/src/assets/images/nandini_verma_1781205738884.jpg',
+    imageUrl: nandiniImage,
     bio: 'Nandini oversees the global delivery centers, ensuring rigorous conformance with international quality parameters (including ISO 9001 & ISO 27001) while scaling high-touch service queues.',
     linkedin: '#'
   }
@@ -106,45 +108,15 @@ export const TEAM: TeamMember[] = [
 
 export const LOCATIONS: GlobalLocation[] = [
   {
-    id: 'thane',
-    city: 'Thane West',
+    id: 'kalyan',
+    city: 'Kalyan West',
     country: 'India',
-    address: 'Amfotech IT Park, 5th Floor, Road No.8 Wagle Industrial Estate, Thane West, Maharashtra 400604',
-    phone: '+91 (022) 5000 0555',
-    alternativePhone: '+91 70456 41234',
-    email: 'contact@trunex.com',
+    address: '302, Siddharth Tower, Station Road, Kalyan West, Maharashtra 421301',
+    phone: '+91 (0251) 500 0123',
+    alternativePhone: '+91 98765 43210',
+    email: 'contact@trunexbpo.com',
     timezone: 'Asia/Kolkata',
-    coordinates: { x: 72.95, y: 19.20 }
-  },
-  {
-    id: 'manila',
-    city: 'Manila Metropolis',
-    country: 'Philippines',
-    address: 'Ortigas Center, 16th Floor, Emerald Tower, Pasig City, Metro Manila 1605',
-    phone: '+63 2 8500 1234',
-    email: 'manila.office@trunex.com',
-    timezone: 'Asia/Manila',
-    coordinates: { x: 121.05, y: 14.58 }
-  },
-  {
-    id: 'newyork',
-    city: 'New York City',
-    country: 'United States',
-    address: '745 Fifth Avenue, Suite 1200, New York, NY 10151',
-    phone: '+1 (212) 555-0182',
-    email: 'us.sales@trunex.com',
-    timezone: 'America/New_York',
-    coordinates: { x: -73.97, y: 40.76 }
-  },
-  {
-    id: 'london',
-    city: 'London City',
-    country: 'United Kingdom',
-    address: '28 Throgmorton Street, EC2N 2AN, London',
-    phone: '+44 20 7946 0958',
-    email: 'uk.office@trunex.com',
-    timezone: 'Europe/London',
-    coordinates: { x: -0.08, y: 51.51 }
+    coordinates: { x: 73.13, y: 19.24 }
   }
 ];
 
