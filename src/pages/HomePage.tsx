@@ -40,7 +40,7 @@ export default function HomePage() {
             <span className="text-cyan-700">Next-Level Performance.</span>
           </h1>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed max-w-xl">
-            At Trunex, we drive efficiency for ambitious enterprises by coupling secure global operations with intelligent business processing. Our team manages your service delivery grids with rigor and clarity.
+            At Trunex BPO, we help businesses scale faster with reliable, cost-effective, and technology-driven outsourcing solutions. From customer support and lead generation to back-office operations and sales support, our experienced teams become an extension of your business—delivering exceptional service, operational efficiency, and measurable results.
           </p>
           <div className="pt-4 flex flex-wrap gap-4 items-center">
             <button
