@@ -169,17 +169,17 @@ export default function HomePage() {
           <div className="space-y-2 md:pr-6">
             <span className="font-display text-4xl md:text-[46px] font-extrabold text-white leading-none">98.7%</span>
             <span className="text-[10px] font-bold text-cyan-400 uppercase tracking-widest block">Client Retention SLA Ratio</span>
-            <p className="text-slate-450 text-xs">Our clients trust our transitions team for consistent, multi-year support pipelines.</p>
+            <p className="text-slate-450 text-xs">We are committed to delivering exceptional customer experiences through consistent service quality, quick response times, and customer-focused support across every interaction.</p>
           </div>
           <div className="space-y-2 pt-8 md:pt-0 md:px-10">
-            <span className="font-display text-4xl md:text-[46px] font-extrabold text-white leading-none">1.2M+</span>
-            <span className="text-[10px] font-bold text-cyan-400 uppercase tracking-widest block">Secure Transacts Daily</span>
-            <p className="text-slate-450 text-xs">Processing intensive banking records, SEC filings, and high-volume consumer underwriting.</p>
+            <span className="font-display text-4xl md:text-[46px] font-extrabold text-white leading-none">10,000+</span>
+            <span className="text-[10px] font-bold text-cyan-400 uppercase tracking-widest block">Customer Interactions Monthly</span>
+            <p className="text-slate-450 text-xs">Our experienced sales and support teams consistently generate qualified leads, appointments, and successful conversions, helping clients accelerate business growth.</p>
           </div>
           <div className="space-y-2 pt-8 md:pt-0 md:pl-10">
-            <span className="font-display text-4xl md:text-[46px] font-extrabold text-white leading-none">&lt; 2 Hrs</span>
-            <span className="text-[10px] font-bold text-cyan-400 uppercase tracking-widest block">Incident Queue Resolution</span>
-            <p className="text-slate-450 text-xs font-medium">Bespoke expedited SLAs ensure mission-critical processes operate without interruption.</p>
+            <span className="font-display text-4xl md:text-[46px] font-extrabold text-white leading-none">24/7</span>
+            <span className="text-[10px] font-bold text-cyan-400 uppercase tracking-widest block">Customer Support</span>
+            <p className="text-slate-450 text-xs font-medium">Our dedicated teams provide around-the-clock voice, chat, and email support, ensuring your customers receive timely assistance whenever they need it.</p>
           </div>
         </div>
       </div>
