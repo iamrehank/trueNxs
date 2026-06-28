@@ -1,15 +1,13 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { TEAM } from '../data';
-import { Users, ChevronDown, ArrowUpRight, Award, Clock, ShieldCheck, Zap } from 'lucide-react';
+import { Users, ArrowUpRight, Award, Clock, ShieldCheck, Zap } from 'lucide-react';
 import { motion } from 'motion/react';
 import corporateCsrImage from '../assets/images/corporate_csr_1781205765498.jpg';
-import adityaImage from '../assets/images/aditya_shah_1781205723085.jpg';
-import nandiniImage from '../assets/images/nandini_verma_1781205738884.jpg';
+import imranImage from '../assets/images/imran.jpeg';
 
 const teamImages: Record<string, string> = {
-  'Aditya Shah': adityaImage,
-  'Nandini Verma': nandiniImage,
+  'Imran Sayyed': imranImage,
 };
 
 interface AboutPageProps {
@@ -18,7 +16,6 @@ interface AboutPageProps {
 
 export default function AboutPage({ onOpenCareers }: AboutPageProps) {
   const [expandedLeader, setExpandedLeader] = useState<string | null>(null);
-  const [showAdvisory, setShowAdvisory] = useState(false);
 
   return (
     <motion.div
@@ -34,13 +31,13 @@ export default function AboutPage({ onOpenCareers }: AboutPageProps) {
         <div className="lg:col-span-7 space-y-6">
           <span className="text-xs font-bold text-cyan-750 uppercase tracking-widest">Corporate Overview</span>
           <h2 className="font-sans text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight leading-none">
-            Trunex BPO balances institutional trust with high-tech precision.
+            Empowering Businesses Through Smart Outsourcing Solutions
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">
-            Trunex represents the evolution of strategic process outsourcing. We align highly educated human assets from our delivery node in Kalyan West, Maharashtra, with custom CRM pipelines and proprietary software automation tools.
+            Trunex BPO Pvt. Ltd. is a trusted Business Process Outsourcing partner dedicated to helping businesses improve customer experiences, streamline operations, and accelerate growth. We combine skilled professionals, innovative technology, and proven business processes to deliver reliable, scalable, and cost-effective outsourcing solutions tailored to each client's unique needs.
           </p>
           <p className="text-slate-600 text-sm leading-relaxed">
-            Under standard compliance architectures, our operational lines are checked against rigorous SOC2 audit reviews, HIPAA security controls, and SEC XBRL financial report guidelines. We serve public multinational giants and high-growth consumer FinTech enterprises who require absolute service continuity.
+            From customer support and lead generation to back-office operations and business process management, our experienced teams work as a seamless extension of your organization. Our commitment to quality, transparency, and continuous improvement enables businesses to reduce operational costs, increase productivity, and focus on achieving long-term success.
           </p>
         </div>
 
@@ -51,10 +48,10 @@ export default function AboutPage({ onOpenCareers }: AboutPageProps) {
             <span className="text-[10px] font-bold text-cyan-400 uppercase tracking-widest">By The Numbers</span>
             <div className="grid grid-cols-2 gap-3">
               {[
-                { icon: <ShieldCheck size={15} className="text-cyan-400" />, value: '98.7%', label: 'SLA Adherence' },
-                { icon: <Clock size={15} className="text-[#d95f00]" />, value: '< 2 Hrs', label: 'Incident Resolution' },
-                { icon: <Zap size={15} className="text-emerald-400" />, value: '24 / 7', label: 'Round-the-Clock Ops' },
-                { icon: <Users size={15} className="text-cyan-400" />, value: '50+', label: 'Certified Specialists' },
+                { icon: <ShieldCheck size={15} className="text-cyan-400" />, value: '98.7%', label: 'Customer Satisfaction' },
+                { icon: <Clock size={15} className="text-[#d95f00]" />, value: '24/7', label: 'Support Availability' },
+                { icon: <Zap size={15} className="text-emerald-400" />, value: '4+ Years', label: 'Industry Experience' },
+                { icon: <Users size={15} className="text-cyan-400" />, value: '50+', label: 'Dedicated Professionals' },
               ].map((stat, i) => (
                 <div key={i} className="p-4 bg-white/5 rounded-xl border border-white/8 space-y-2">
                   <div className="flex items-center gap-1.5">{stat.icon}</div>
@@ -65,7 +62,7 @@ export default function AboutPage({ onOpenCareers }: AboutPageProps) {
             </div>
             <div className="border-t border-slate-700/60 pt-5 flex items-start gap-2.5 text-xs text-slate-400">
               <Award size={14} className="text-cyan-400 shrink-0 mt-0.5" />
-              <span>Independently audited under ISO 9001, ISO 27001 & SOC2 frameworks across all delivery centers.</span>
+              <span>Committed to delivering secure, reliable, and scalable outsourcing solutions with a customer-first approach.</span>
             </div>
           </div>
         </div>
@@ -74,18 +71,24 @@ export default function AboutPage({ onOpenCareers }: AboutPageProps) {
       {/* Leadership */}
       <div className="space-y-12">
         <div className="text-center max-w-2xl mx-auto space-y-3">
-          <h3 className="font-sans text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">Operations Leadership</h3>
+          <h3 className="font-sans text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">Meet the Leaders Driving Trunex BPO</h3>
           <p className="text-slate-500 text-sm leading-relaxed">
-            Our managing committee directs international operations and maps transition guidelines from a position of profound sector proficiency.
+            At Trunex BPO Pvt. Ltd., our leadership team is committed to delivering operational excellence, fostering innovation, and building long-term client partnerships. Together, we bring expertise, strategic vision, and a customer-first approach to help businesses grow through reliable and scalable outsourcing solutions.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {TEAM.map((leader, idx) => {
             const isExpanded = expandedLeader === leader.name;
             return (
               <div key={idx} className="bg-white border border-slate-200/80 rounded-2xl p-6 md:p-8 flex flex-col justify-between items-start space-y-6 hover:shadow-md transition-all">
                 <div className="flex gap-4 items-center w-full">
-                  <img src={teamImages[leader.name] ?? leader.imageUrl} alt={leader.name} className="w-16 h-16 rounded-full object-cover border border-slate-100 shrink-0" />
+                  {teamImages[leader.name] ? (
+                    <img src={teamImages[leader.name]} alt={leader.name} className="w-16 h-16 rounded-full object-cover border border-slate-100 shrink-0" />
+                  ) : (
+                    <div className="w-16 h-16 rounded-full bg-cyan-100 border border-slate-100 flex items-center justify-center shrink-0">
+                      <span className="text-cyan-700 font-extrabold text-lg">{leader.name.charAt(0)}</span>
+                    </div>
+                  )}
                   <div>
                     <h4 className="font-sans text-base font-bold text-slate-900 leading-none">{leader.name}</h4>
                     <span className="text-xs font-semibold text-cyan-700 block mt-1.5">{leader.role}</span>
@@ -93,12 +96,24 @@ export default function AboutPage({ onOpenCareers }: AboutPageProps) {
                 </div>
                 <div className="text-xs text-slate-600 leading-relaxed">
                   <p className={isExpanded ? '' : 'line-clamp-3'}>{leader.bio}</p>
-                  <button
-                    onClick={() => setExpandedLeader(isExpanded ? null : leader.name)}
-                    className="text-cyan-700 hover:text-cyan-900 font-bold block mt-2 text-[11px] uppercase tracking-wide cursor-pointer focus:outline-none"
-                  >
-                    {isExpanded ? 'Show less' : 'Read detailed bio'}
-                  </button>
+                  <div className="flex items-center gap-4 mt-2">
+                    <button
+                      onClick={() => setExpandedLeader(isExpanded ? null : leader.name)}
+                      className="text-cyan-700 hover:text-cyan-900 font-bold text-[11px] uppercase tracking-wide cursor-pointer focus:outline-none"
+                    >
+                      {isExpanded ? 'Show less' : 'Read Full Profile'}
+                    </button>
+                    {leader.linkedin && leader.linkedin !== '#' && (
+                      <a
+                        href={leader.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[11px] font-bold text-slate-400 hover:text-cyan-700 uppercase tracking-wide transition-colors"
+                      >
+                        LinkedIn ↗
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
             );
@@ -106,31 +121,6 @@ export default function AboutPage({ onOpenCareers }: AboutPageProps) {
         </div>
       </div>
 
-      {/* Advisory Board */}
-      <div className="bg-slate-100/50 border border-slate-200/60 rounded-2xl p-6 md:p-8 max-w-4xl mx-auto">
-        <button
-          onClick={() => setShowAdvisory(!showAdvisory)}
-          className="w-full flex justify-between items-center text-left focus:outline-none cursor-pointer"
-        >
-          <div className="flex items-center gap-3">
-            <Users size={18} className="text-cyan-700 shrink-0" />
-            <span className="font-sans text-sm font-bold text-slate-850">View Board of Directors & Strategic Advisors</span>
-          </div>
-          <ChevronDown size={16} className={`text-slate-400 transition-transform ${showAdvisory ? 'rotate-180' : ''}`} />
-        </button>
-        {showAdvisory && (
-          <div className="mt-6 pt-6 border-t border-slate-200 grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs animate-in slide-in-from-top-2 duration-300">
-            <div className="p-3 bg-white rounded-lg border border-slate-200/40">
-              <span className="font-bold text-slate-850 block">Dr. Robert V. Vance</span>
-              <span className="text-slate-500">Corporate Governance Advisory (ex-WFE Commission)</span>
-            </div>
-            <div className="p-3 bg-white rounded-lg border border-slate-200/40">
-              <span className="font-bold text-slate-850 block">Meera K. Patel</span>
-              <span className="text-slate-500">International Compliance Lead & Senior Advisory Counsel</span>
-            </div>
-          </div>
-        )}
-      </div>
 
       {/* CSR */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">

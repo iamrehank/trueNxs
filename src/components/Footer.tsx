@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ArrowRight, Check, ExternalLink, Share2 } from 'lucide-react';
+import { ExternalLink, Share2 } from 'lucide-react';
 
 interface FooterProps {
   onOpenLocations: () => void;
@@ -8,21 +7,6 @@ interface FooterProps {
 
 export default function Footer({ onOpenLocations }: FooterProps) {
   const navigate = useNavigate();
-  const [email, setEmail] = useState('');
-  const [subscribed, setSubscribed] = useState(false);
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const handleSubscribe = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!email) return;
-    setIsSubmitting(true);
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setSubscribed(true);
-      setEmail('');
-      setTimeout(() => setSubscribed(false), 5000);
-    }, 1200);
-  };
 
   const handleNav = (to: string) => {
     navigate(to);
@@ -31,7 +15,7 @@ export default function Footer({ onOpenLocations }: FooterProps) {
 
   return (
     <footer id="app-footer" className="bg-[#131b2e] text-white pt-24 pb-12">
-      <div className="max-w-[1280px] mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-4 gap-12">
+      <div className="max-w-[1280px] mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-3 gap-12">
 
         {/* Brand */}
         <div className="space-y-6">
@@ -40,7 +24,7 @@ export default function Footer({ onOpenLocations }: FooterProps) {
             <span className="h-1.5 w-1.5 bg-cyan-400 rounded-full mt-2"></span>
           </div>
           <p className="text-slate-400 text-sm leading-relaxed">
-            Trunex Global BPO balances institutional trust with high-tech precision. Providing systematic reliability and human-centric operations for the modern enterprise.
+            Trunex BPO Pvt. Ltd. empowers businesses with reliable outsourcing solutions. We combine skilled professionals, innovative technology, and customer-focused strategies to deliver operational excellence, exceptional service, and sustainable business growth.
           </p>
           <div className="flex gap-3">
             <button
@@ -98,44 +82,6 @@ export default function Footer({ onOpenLocations }: FooterProps) {
           </ul>
         </div>
 
-        {/* Newsletter */}
-        <div className="space-y-6">
-          <h4 className="font-sans text-sm font-bold uppercase tracking-wider text-cyan-400">Stay Updated</h4>
-          <p className="text-slate-400 text-sm leading-relaxed">
-            Subscribe to our newsletter for global business insights, compliance changes (SEC/XBRL), and BPO innovations.
-          </p>
-          <form onSubmit={handleSubscribe} className="space-y-3">
-            <div className="relative">
-              <input
-                type="email"
-                required
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Your work email"
-                className="w-full bg-slate-800/80 border border-slate-700 rounded-lg px-4 py-3 text-slate-100 text-sm focus:border-cyan-400 focus:outline-none focus:ring-1 focus:ring-cyan-400/20 transition-all"
-              />
-              <button
-                type="submit"
-                disabled={isSubmitting}
-                className="absolute right-2 top-1/2 -translate-y-1/2 text-cyan-400 hover:text-cyan-300 disabled:opacity-50 p-1 bg-slate-900 border border-slate-700/60 rounded-md transition-colors cursor-pointer"
-              >
-                {isSubmitting
-                  ? <div className="w-4 h-4 border-2 border-cyan-400 border-t-transparent rounded-full animate-spin"></div>
-                  : <ArrowRight size={16} />
-                }
-              </button>
-            </div>
-            {subscribed && (
-              <div className="flex items-center gap-2 text-emerald-400 text-xs animate-in fade-in duration-300">
-                <div className="w-5 h-5 bg-emerald-500/20 rounded-full flex items-center justify-center shrink-0">
-                  <Check size={12} strokeWidth={3} />
-                </div>
-                <span>Thank you! You have successfully subscribed to Trunex Updates.</span>
-              </div>
-            )}
-          </form>
-          <p className="text-xs text-slate-500">By joining, you agree to our Security Policies and Data Terms.</p>
-        </div>
       </div>
 
       {/* Bottom Row */}

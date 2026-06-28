@@ -145,17 +145,31 @@ export const SERVICES: ServiceItem[] = [
 
 export const TEAM: TeamMember[] = [
   {
-    name: 'Aditya Shah',
-    role: 'Managing Director',
+    name: 'Imran Sayyed',
+    role: 'Founder & Chief Executive Officer (CEO)',
     imageUrl: '',
-    bio: 'Aditya has over 20 years of leadership experience in strategic outsourcing, advising Fortune 500 enterprises on optimizing process efficiencies and institutional workflow migrations.',
+    bio: 'Imran Sayyed founded Trunex BPO Pvt. Ltd. with a vision to help businesses grow through innovative and customer-focused outsourcing solutions. He leads the company\'s strategic direction, business development, and operational excellence, ensuring every client receives reliable, scalable, and high-quality services.',
+    linkedin: 'https://www.linkedin.com/in/imran-sayyed-077501203?utm_source=share_via&utm_content=profile&utm_medium=member_ios'
+  },
+  {
+    name: 'Hazel Jones',
+    role: 'Director of Business Development',
+    imageUrl: '',
+    bio: 'Hazel Jones leads Trunex BPO\'s business development initiatives, focusing on building strong client relationships and identifying new growth opportunities. She works closely with businesses to understand their needs and develop customized outsourcing solutions that create long-term value.',
     linkedin: '#'
   },
   {
-    name: 'Nandini Verma',
-    role: 'Chief Operations Officer',
+    name: 'Ramish Momin',
+    role: 'Compliance Manager',
     imageUrl: '',
-    bio: 'Nandini oversees the global delivery centers, ensuring rigorous conformance with international quality parameters (including ISO 9001 & ISO 27001) while scaling high-touch service queues.',
+    bio: 'Ramish Momin oversees compliance, quality assurance, and operational standards across Trunex BPO. He ensures that every process follows industry best practices, maintains data security, and meets the highest standards of quality and client confidentiality.',
+    linkedin: '#'
+  },
+  {
+    name: 'Harshada Kamble',
+    role: 'Operations Manager',
+    imageUrl: '',
+    bio: 'Harshada Kamble manages the day-to-day operations of Trunex BPO, ensuring smooth service delivery, team performance, and operational efficiency. She is dedicated to maintaining exceptional customer service and delivering consistent results for every client.',
     linkedin: '#'
   }
 ];
