@@ -4,6 +4,13 @@ import { TEAM } from '../data';
 import { Users, ChevronDown, ArrowUpRight, Award, Clock, ShieldCheck, Zap } from 'lucide-react';
 import { motion } from 'motion/react';
 import corporateCsrImage from '../assets/images/corporate_csr_1781205765498.jpg';
+import adityaImage from '../assets/images/aditya_shah_1781205723085.jpg';
+import nandiniImage from '../assets/images/nandini_verma_1781205738884.jpg';
+
+const teamImages: Record<string, string> = {
+  'Aditya Shah': adityaImage,
+  'Nandini Verma': nandiniImage,
+};
 
 interface AboutPageProps {
   onOpenCareers: () => void;
@@ -78,7 +85,7 @@ export default function AboutPage({ onOpenCareers }: AboutPageProps) {
             return (
               <div key={idx} className="bg-white border border-slate-200/80 rounded-2xl p-6 md:p-8 flex flex-col justify-between items-start space-y-6 hover:shadow-md transition-all">
                 <div className="flex gap-4 items-center w-full">
-                  <img src={leader.imageUrl} alt={leader.name} className="w-16 h-16 rounded-full object-cover border border-slate-100 shrink-0" />
+                  <img src={teamImages[leader.name] ?? leader.imageUrl} alt={leader.name} className="w-16 h-16 rounded-full object-cover border border-slate-100 shrink-0" />
                   <div>
                     <h4 className="font-sans text-base font-bold text-slate-900 leading-none">{leader.name}</h4>
                     <span className="text-xs font-semibold text-cyan-700 block mt-1.5">{leader.role}</span>

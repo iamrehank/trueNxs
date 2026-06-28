@@ -1,90 +1,88 @@
 import { ServiceItem, TeamMember, GlobalLocation, JobOpening } from './types';
-import adityaImage from './assets/images/aditya_shah_1781205723085.jpg';
-import nandiniImage from './assets/images/nandini_verma_1781205738884.jpg';
 
 export const SERVICES: ServiceItem[] = [
   {
-    id: 'icare',
-    name: 'iCARE',
-    title: 'Customer Acquisition & Retention',
-    badge: 'CUSTOMER ACQUISITION & CRM',
-    description: 'Comprehensive CRM lifecycle management—from targeting and segmentation to acquisition and engagement, ensuring superior retention and long-term brand loyalty.',
-    longDescription: 'Trunex’s iCARE is a high-tech, human-centric solution that streamlines your customer lifecycle mapping. We manage multi-channel support operations (Voice, Chat, Email, Social Media) powered by smart automation to keep customer satisfaction index (CSAT) high while controlling service delivery footprints. We align directly on key success parameters like Average Handle Time (AHT) and First Contact Resolution (FCR).',
-    logoUrl: 'https://lh3.googleusercontent.com/aida/AP1WRLv3d2bR7xRWIdEe5NQ0udB_e5DjWFqG3FQz616t3z2oo0qjTLlCbMW2Yx9Ma6OfDPekjbZ_l8YAYAfZAHR42Irky_gcR_f2YFg-4mpgSYeDSKakGRHt48vVnjfGWbde_PN58iH3-YcUm8x2vENxpuvNb9oY0UufAuSekHGMAsowUSqNJMaFe23JUod1AXcIptLhyniEqSDgcCdrhaJ8y8id6fLNwuNOnOwbkmeWaEilz2_xtGlyAzBNdA',
+    id: 'connect',
+    name: 'Trunex Connect',
+    title: 'Inbound Sales & Warm Transfers',
+    badge: 'INBOUND SALES',
+    description: 'Delivering high-converting inbound call handling and warm transfer solutions for Home Security and other service industries.',
+    longDescription: 'Delivering high-converting inbound call handling and warm transfer solutions for Home Security and other service industries. Our experienced agents maximize conversions while ensuring a seamless customer experience.',
+    logoUrl: '',
     features: [
-      'Multi-channel inbound & outbound support operations',
-      'Predictive dialing and interactive voice portals',
-      'Advanced customer retention and loyalty management',
-      '24/7/365 coverage with dual-continent failovers',
-      'AHT reduction strategies with live supervisor coaching'
+      'High-converting inbound call handling',
+      'Seamless warm transfer solutions for Home Security',
+      'Trained agents focused on maximizing conversions',
+      'Multi-channel intake management (Voice, Chat)',
+      'Real-time script optimization and agent coaching'
     ],
     caseStudy: {
-      title: 'E-Commerce Giant CSAT Lift',
-      metrics: '+34% CSAT Increase',
-      summary: 'Re-engineered customer support queues for a global e-commerce retail division, shifting 42% of volume to automated live workflows while raising average NPS score by 22 points.'
+      title: 'Home Security Provider Conversion Boost',
+      metrics: '+42% Lead-to-Sale Conversion',
+      summary: 'Deployed a dedicated inbound sales team for a national home security brand, reducing call abandonment by 28% and boosting qualified warm transfers to closers by 42%.'
     }
   },
   {
-    id: 'ifap',
-    name: 'iFAP',
-    title: 'Finance & Accounting Solutions',
-    badge: 'FINANCE & ACCOUNTING',
-    description: 'Premium XBRL/Edgar solutions for global filing needs. Full conformation with SEC guidelines for 10K, 10Q, and complex financial reporting.',
-    longDescription: 'Our iFAP service balances precision with speed. We offer turnkey back-office accounting, accounts payable/receivable mapping, payroll automation, and specialized regulatory filing assistance. This incorporates rigorous auditing workflows conforming to SEC parameters, ensuring absolute compliance and transparency for public entities globally.',
-    logoUrl: 'https://lh3.googleusercontent.com/aida/AP1WRLsAbVlK0WfP7LZXw2JedHWb0RVL1ww97GyNVfGwMHFexcwiVAuMYCj27mPtI2DK8iOyn4zamcyr368cOWcLosSXXa4gn9EykPvgb_xhgopoiP4GaBw7959Zn--m3rTUIOIA2hIpiUuQNrWB_EggYOeS0sOMtw3gL5_XBc3Keeza6yFEDgjNq8OqI-dsfhWjNzCGUFHQACpM7P6Gs3PepL08I5jCtV4ueXk98miLe16-WKsNgrWnZFb670w',
+    id: 'support',
+    name: 'Trunex Support',
+    title: 'Customer Care & Technical Assistance',
+    badge: 'CUSTOMER CARE',
+    description: 'Providing 24/7 customer support, appointment scheduling, technical assistance, retention, and issue resolution.',
+    longDescription: 'Providing 24/7 customer support, appointment scheduling, technical assistance, retention, and issue resolution. We help businesses improve customer satisfaction while reducing operational costs.',
+    logoUrl: '',
     features: [
-      'SEC SEC 10-K, 10-Q & 8-K preparation under XBRL guidelines',
-      'Accounts Receivable (AR) matching & Collections optimization',
-      'Accounts Payable (AP) OCR data capture & automated workflows',
-      'End-to-end audit representation and reconciliation controls',
-      'ISO-certified security vaults for sensitive transactional documents'
+      '24/7 customer support across voice, chat, and email',
+      'Appointment scheduling and calendar management',
+      'Technical assistance and troubleshooting',
+      'Retention programs to reduce customer churn',
+      'Issue resolution with first-contact focus'
     ],
     caseStudy: {
-      title: 'Multinational SEC Compliance Integration',
-      metrics: '0 SEC Filing Delays & 100% Compliance',
-      summary: 'Bespoke integration of continuous XBRL tagging engines, reducing standard 10-Q compilation window from 14 operational days down to just 3 business days.'
+      title: 'SaaS Platform Support Transformation',
+      metrics: '96% CSAT Score Achieved',
+      summary: 'Took over tier-1 and tier-2 support for a growing SaaS platform, reducing average handle time by 35% while lifting customer satisfaction scores from 78% to 96%.'
     }
   },
   {
-    id: 'ifin',
-    name: 'iFIN',
-    title: 'Consumer Lending Turnkey Care',
-    badge: 'CONSUMER LENDING',
-    description: 'Turnkey lending solutions spanning origination, underwriting support, disbursal checks, customer service, and strategic collections management.',
-    longDescription: 'iFIN bridges the gap between borrowers and financial institutions. By mapping processes across loan lifecycles, we optimize risk profiling, expedite administrative underwriting schedules, audit document authenticity, and manage strategic collections with professional dignity and rigorous regulatory alignment.',
-    logoUrl: 'https://lh3.googleusercontent.com/aida/AP1WRLs8p0ryOOAXoUMBnzJU095xinQRk4V4l_8gLlnz3QnwH7XzCBsDboKXrt3sZsLhsl8MNu303EsHTnsDcZfBQw3VPUJjoot0N88JIBXajsT4wRf99utbKkLhCXTBtdCVlkaCmGODgNQlpGA1JMPlVNp3w2MnlrmjDkRgFSjJrpBoyUJpuC0zyGhVHKwdYVAd7AxZ_-_vQwFcIJ-RSH3ZxJfRgzBASYYDqm_czyE03Ik8gDVYw59YCVD7xvU',
+    id: 'growth',
+    name: 'Trunex Growth',
+    title: 'Lead Generation & Performance Marketing',
+    badge: 'LEAD GENERATION',
+    description: 'Driving business growth through high-quality inbound leads, digital marketing strategies, and conversion-focused campaigns.',
+    longDescription: 'Driving business growth through high-quality inbound leads, digital marketing strategies, call qualification, CRM management, and conversion-focused campaigns that generate measurable results.',
+    logoUrl: '',
     features: [
-      'Credit document indexing and verified underwriting screening',
-      'Know-Your-Customer (KYC) compliance & anti-fraud gating',
-      'Multi-stage loan portfolios audit support',
-      'Pliant collection operations respecting institutional reputation',
-      'Omni-channel reminders & seamless online payment triggers'
+      'High-quality inbound lead generation campaigns',
+      'Digital marketing strategy and execution',
+      'Call qualification and lead scoring',
+      'CRM management and pipeline reporting',
+      'Conversion-focused outreach campaigns'
     ],
     caseStudy: {
-      title: 'FinTech Credit Line Underwriting Boost',
-      metrics: '4.5x Underwriting Throughput',
-      summary: 'Supported a major consumer FinTech player in scaling origination capacity for credit card and personal loans without expanding in-house administrative staff.'
+      title: 'B2B Lead Pipeline Acceleration',
+      metrics: '3.8x Qualified Lead Volume',
+      summary: 'Built and managed a full-funnel inbound lead generation engine for a mid-market B2B client, tripling qualified pipeline volume within 90 days through optimized digital campaigns.'
     }
   },
   {
-    id: 'iapps',
-    name: 'iAPPS',
-    title: 'Technology & Workflow Consulting',
-    badge: 'TECH CONSULTING',
-    description: 'Leveraging technology as a strategic offering. We build bespoke tools that drive revenue goals while maintaining strict cost-efficiency.',
-    longDescription: 'iAPPS introduces a technical layer of customized tools to traditional BPO. We don’t just supply labor; we build intelligent automation wrappers, configure smart CRM integrations, deploy real-time analytics suites, and optimize underlying systems so that enterprise processes operate with high-speed digital alignment.',
-    logoUrl: 'https://lh3.googleusercontent.com/aida/AP1WRLtsn4CtO2ZuLPfscS7Gn34lzUVxFLX5TqZ4rOTskydl-JSVqdQD34QxpoEHZoVSAqkd4ED4910TD4hidfy2DNMh5PZZiKq-J0J02eRJ_EYDAw6kpXujyS69Rt1b0xD-aKB9yRqHQD4lPHhnqF0OrU7AeoKEIvQKCmuPaGOO9JL9rE4Hr6iXcHYTC4BeBMOtRJn_zTHXa7WPVpOF6K949tzUL0eDlhxzCWglW6onwXgz-_8V9cssEyFL9w',
+    id: 'ops',
+    name: 'Trunex Ops',
+    title: 'Back Office & Business Process Outsourcing',
+    badge: 'BACK OFFICE & BPO',
+    description: 'Offering end-to-end back-office solutions including data entry, CRM updates, quality assurance, reporting, and compliance.',
+    longDescription: 'Offering end-to-end back-office solutions including data entry, CRM updates, quality assurance, reporting, compliance, and administrative support to streamline operations and improve efficiency.',
+    logoUrl: '',
     features: [
-      'Bespoke CRM integrations and contact center API bridging',
-      'Robotic Process Automation (RPA) workflows for data synchronization',
-      'Machine Learning powered sentiment analysis over support logs',
-      'Legacy system wrap-around connectors reducing capital expenditure',
-      'Global uptime monitoring and direct cloud infrastructure integrations'
+      'End-to-end data entry and CRM updates',
+      'Quality assurance monitoring and reporting',
+      'Compliance documentation and administration',
+      'Workflow automation and process optimization',
+      'Scalable back-office support teams'
     ],
     caseStudy: {
-      title: 'Digital Customer Journey Re-platform',
-      metrics: '-45% IT Maintenance Overhead',
-      summary: 'Designed custom data transformation pipelines that bridge legacy terminal back-ends with sleek, modern browser-based support consoles, saving millions in infrastructure maintenance.'
+      title: 'E-Commerce Operations Scale-Up',
+      metrics: '60% Reduction in Processing Time',
+      summary: 'Took over order management, returns processing, and CRM hygiene for a fast-growing e-commerce brand, cutting back-office processing time by 60% while maintaining 99.8% data accuracy.'
     }
   }
 ];
@@ -93,14 +91,14 @@ export const TEAM: TeamMember[] = [
   {
     name: 'Aditya Shah',
     role: 'Managing Director',
-    imageUrl: adityaImage,
+    imageUrl: '',
     bio: 'Aditya has over 20 years of leadership experience in strategic outsourcing, advising Fortune 500 enterprises on optimizing process efficiencies and institutional workflow migrations.',
     linkedin: '#'
   },
   {
     name: 'Nandini Verma',
     role: 'Chief Operations Officer',
-    imageUrl: nandiniImage,
+    imageUrl: '',
     bio: 'Nandini oversees the global delivery centers, ensuring rigorous conformance with international quality parameters (including ISO 9001 & ISO 27001) while scaling high-touch service queues.',
     linkedin: '#'
   }
@@ -122,45 +120,45 @@ export const LOCATIONS: GlobalLocation[] = [
 
 export const JOB_OPENINGS: JobOpening[] = [
   {
-    id: 'finance-analyst',
-    title: 'Senior Financial & SEC Compliance Analyst',
-    department: 'iFAP - Finance & Accounting',
-    location: 'Thane, India',
+    id: 'inbound-sales-agent',
+    title: 'Inbound Sales Agent',
+    department: 'Trunex Connect - Inbound Sales',
+    location: 'Kalyan West, India',
     type: 'Full-time',
-    description: 'We are seeking an experienced Financial Analyst with strong background in SEC compliance structures and XBRL tagging. This individual will handle critical public reporting pipelines for international corporate clients.',
+    description: 'Handle high-volume inbound calls for Home Security and service industry clients. Convert leads and manage warm transfers with professionalism and consistency.',
     requirements: [
-      'Strong grasp of US GAAP rules and SEC financial statement layouts',
-      '3+ years experience with XBRL tagging frameworks and Edgar tools',
-      'Bachelor’s degree in Accounting, Finance, or similar (CPA/CA preferred)',
-      'Impeccable details focus and professional report drafting competence'
+      'Excellent spoken English and communication skills',
+      '1+ years experience in inbound sales or call center environment',
+      'Ability to follow scripts while adapting to customer needs',
+      'Target-driven mindset with a focus on conversion rates'
     ]
   },
   {
-    id: 'customer-care-lead',
-    title: 'Customer Experience Operations Supervisor',
-    department: 'iCARE - Customer Operations',
-    location: 'Manila, Philippines (Hybrid)',
+    id: 'customer-support-lead',
+    title: 'Customer Support Team Lead',
+    department: 'Trunex Support - Customer Care',
+    location: 'Kalyan West, India',
     type: 'Full-time',
-    description: 'Lead a team of 25+ Customer Support Associates managing live retail workflows for a major European distributor. Track team KPIs like AHT, CSAT, and schedule adherence daily.',
+    description: 'Lead a team of customer support associates handling inbound queries, technical assistance, and retention campaigns across voice, chat, and email channels.',
     requirements: [
-      '2+ years supervising in a high-volume BPO contact center program',
-      'Exceptional spoken & written English communication credentials',
-      'Familiarity with modern dashboard systems like Zendesk, Freshdesk, or Salesforce Service Cloud',
-      'Proven expertise coaching agents to rise above target CSAT levels'
+      '2+ years supervising in a BPO contact center environment',
+      'Strong English communication and coaching skills',
+      'Familiarity with CRM tools like Zendesk or Freshdesk',
+      'Proven ability to maintain high CSAT scores under volume'
     ]
   },
   {
-    id: 'rpa-architect',
-    title: 'RPA (UIPath / BluePrism) Developer',
-    department: 'iAPPS - Technology Consulting',
-    location: 'Thane, India',
+    id: 'digital-marketing-executive',
+    title: 'Digital Marketing & Lead Gen Executive',
+    department: 'Trunex Growth - Performance Marketing',
+    location: 'Kalyan West, India',
     type: 'Full-time',
-    description: 'Responsible for building software robots to automate repetitive data entry activities across legacy mainframe applications for banking, credit, and consumer finance setups.',
+    description: 'Run inbound lead generation campaigns, manage CRM pipelines, and optimize digital marketing strategies to drive measurable business growth for clients.',
     requirements: [
-      'Certified UIPath Developer or Advanced RPA Professional',
-      'Excellent troubleshooting skills over diverse Web, API, and desktop system targets',
-      'Familiarity with SQL databases and quick script programming (JS / Python)',
-      'Experience in financial services process mapping preferred'
+      'Experience with Google Ads, Meta Ads, or similar platforms',
+      'Hands-on CRM management and lead qualification skills',
+      'Analytical mindset with strong reporting capabilities',
+      'Background in B2B or service-industry marketing preferred'
     ]
   }
 ];

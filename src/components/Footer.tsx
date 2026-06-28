@@ -65,10 +65,10 @@ export default function Footer({ onOpenLocations }: FooterProps) {
           <h4 className="font-sans text-sm font-bold uppercase tracking-wider text-cyan-400 mb-6">Services</h4>
           <ul className="space-y-4">
             {[
-              'Customer Acquisition (iCARE)',
-              'Finance & Accounting (iFAP)',
-              'Consumer Lending (iFIN)',
-              'Technology Consulting (iAPPS)'
+              'Trunex Connect — Inbound Sales',
+              'Trunex Support — Customer Care',
+              'Trunex Growth — Lead Generation',
+              'Trunex Ops — Back Office & BPO'
             ].map((label) => (
               <li key={label}>
                 <button onClick={() => handleNav('/solutions')} className="text-slate-400 hover:text-cyan-400 text-sm transition-colors cursor-pointer text-left focus:outline-none">

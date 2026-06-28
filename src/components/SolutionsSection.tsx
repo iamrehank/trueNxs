@@ -2,18 +2,18 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { SERVICES } from '../data';
 import { ServiceItem } from '../types';
-import { ShieldCheck, Target, ArrowRight, Zap, RefreshCw, BarChart, HeartHandshake, Calculator, TrendingUp, Cpu, Building } from 'lucide-react';
+import { ShieldCheck, BarChart, HeartHandshake, PhoneCall, TrendingUp, Briefcase, Building } from 'lucide-react';
 
 function getServiceIcon(id: string) {
   switch (id) {
-    case 'icare':
-      return <HeartHandshake className="w-8 h-8 text-[#d95f00] group-hover:scale-105 transition-transform" />;
-    case 'ifap':
-      return <Calculator className="w-8 h-8 text-cyan-700 group-hover:scale-105 transition-transform" />;
-    case 'ifin':
+    case 'connect':
+      return <PhoneCall className="w-8 h-8 text-[#d95f00] group-hover:scale-105 transition-transform" />;
+    case 'support':
+      return <HeartHandshake className="w-8 h-8 text-cyan-700 group-hover:scale-105 transition-transform" />;
+    case 'growth':
       return <TrendingUp className="w-8 h-8 text-emerald-600 group-hover:scale-105 transition-transform" />;
-    case 'iapps':
-      return <Cpu className="w-8 h-8 text-indigo-600 group-hover:scale-105 transition-transform" />;
+    case 'ops':
+      return <Briefcase className="w-8 h-8 text-indigo-600 group-hover:scale-105 transition-transform" />;
     default:
       return <Building className="w-8 h-8 text-slate-550 group-hover:scale-105 transition-transform" />;
   }

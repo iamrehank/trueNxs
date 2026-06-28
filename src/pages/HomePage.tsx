@@ -2,17 +2,17 @@ import { useNavigate } from 'react-router-dom';
 import { SERVICES } from '../data';
 import {
   Building, ShieldCheck, Users, ChevronRight,
-  TrendingUp, Sparkles, HeartHandshake, Calculator, Cpu
+  TrendingUp, Sparkles, PhoneCall, HeartHandshake, Briefcase
 } from 'lucide-react';
 import { motion } from 'motion/react';
 
 function getServiceIcon(id: string) {
   switch (id) {
-    case 'icare': return <HeartHandshake className="w-6 h-6 text-[#d95f00]" />;
-    case 'ifap':  return <Calculator className="w-6 h-6 text-cyan-700" />;
-    case 'ifin':  return <TrendingUp className="w-6 h-6 text-emerald-600" />;
-    case 'iapps': return <Cpu className="w-6 h-6 text-indigo-600" />;
-    default:      return <Building className="w-6 h-6 text-slate-650" />;
+    case 'connect': return <PhoneCall className="w-6 h-6 text-[#d95f00]" />;
+    case 'support': return <HeartHandshake className="w-6 h-6 text-cyan-700" />;
+    case 'growth':  return <TrendingUp className="w-6 h-6 text-emerald-600" />;
+    case 'ops':     return <Briefcase className="w-6 h-6 text-indigo-600" />;
+    default:        return <Building className="w-6 h-6 text-slate-650" />;
   }
 }
 

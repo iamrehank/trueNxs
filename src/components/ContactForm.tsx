@@ -12,7 +12,7 @@ export default function ContactForm({ onAddInquiry, onOpenLocations }: ContactFo
   // Form input states
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
-  const [service, setService] = useState('iCARE - Customer Acquisition');
+  const [service, setService] = useState('Trunex Connect - Inbound Sales');
   const [message, setMessage] = useState('');
   
   // Submit animation states
@@ -127,11 +127,11 @@ export default function ContactForm({ onAddInquiry, onOpenLocations }: ContactFo
                 onChange={(e) => setService(e.target.value)}
                 className="w-full bg-transparent border-0 border-b border-slate-200 focus:border-cyan-600 focus:ring-0 text-slate-900 transition-all pb-2 px-0 text-sm focus:outline-none appearance-none cursor-pointer"
               >
-                <option value="iCARE - Customer Acquisition">iCARE - Customer Acquisition & CSR</option>
-                <option value="iFAP - Finance & Accounting">iFAP - Finance & Accounts Payable</option>
-                <option value="iFIN - Consumer Lending">iFIN - Consumer Lending Administration</option>
-                <option value="iAPPS - Technology Consulting">iAPPS - Technology & Automation Consulting</option>
-                <option value="Corporate Partnership">Other/Corporate Strategic Inquiry</option>
+                <option value="Trunex Connect - Inbound Sales">Trunex Connect — Inbound Sales & Warm Transfers</option>
+                <option value="Trunex Support - Customer Care">Trunex Support — Customer Care & Technical Assistance</option>
+                <option value="Trunex Growth - Lead Generation">Trunex Growth — Lead Generation & Performance Marketing</option>
+                <option value="Trunex Ops - Back Office">Trunex Ops — Back Office & BPO</option>
+                <option value="General Inquiry">General / Other Inquiry</option>
               </select>
             </div>
 

@@ -21,7 +21,7 @@ export default function App() {
   const [inquiries, setInquiries] = useState<Inquiry[]>([]);
 
   const [globalNotice, setGlobalNotice] = useState<{ message: string; type: 'info' | 'success' } | null>({
-    message: 'Operational Notice: Regional compliance reports (SEC Form 10-K workflow upgrades) are now live inside iFAP Delivery Cells.',
+    message: 'Operational Notice: New service offerings are now live — Trunex Connect, Support, Growth & Ops. Explore our solutions today.',
     type: 'info'
   });
 
@@ -40,7 +40,7 @@ export default function App() {
           id: 'inq-seed-1',
           name: 'Alexander Sterling',
           email: 'sterling.cx@fintechpay.com',
-          serviceInterest: 'iFIN - Consumer Lending',
+          serviceInterest: 'Trunex Connect - Inbound Sales',
           message: 'Requested high-velocity document indexing alignment for real-time risk profiles. Current scope covers 45,000 credit accounts annually.',
           date: '2026-06-11 08:32 AM',
           status: 'Assigned'
@@ -49,7 +49,7 @@ export default function App() {
           id: 'inq-seed-2',
           name: 'Sophia Chen',
           email: 's.chen@globalreit.sg',
-          serviceInterest: 'iFAP - Finance & Accounting',
+          serviceInterest: 'Trunex Support - Customer Care',
           message: 'Urgent compliance support for computerized XBRL tagging under SEC regulations ahead of Q3 reporting window.',
           date: '2026-06-10 14:15 PM',
           status: 'Reviewing'
