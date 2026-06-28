@@ -177,7 +177,7 @@ export const TEAM: TeamMember[] = [
 export const LOCATIONS: GlobalLocation[] = [
   {
     id: 'kalyan',
-    city: 'Kalyan',
+    city: 'Thane',
     country: 'India',
     companyName: 'Trunex BPO Pvt. Ltd.',
     address: '109, Sapphire Building, Kalyan, Thane, Maharashtra 421301, India',
@@ -189,7 +189,7 @@ export const LOCATIONS: GlobalLocation[] = [
   },
   {
     id: 'delaware',
-    city: 'Dover',
+    city: 'Delaware',
     country: 'United States',
     companyName: 'Trunex BPO LLC',
     address: '8 The Green, Suite A, City of Dover, Delaware 19901, USA',
