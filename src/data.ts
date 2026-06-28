@@ -30,17 +30,22 @@ export const SERVICES: ServiceItem[] = [
   {
     id: 'support',
     name: 'Trunex Support',
-    title: 'Customer Care & Technical Assistance',
-    badge: 'CUSTOMER CARE',
-    description: 'Providing 24/7 customer support, appointment scheduling, technical assistance, retention, and issue resolution.',
-    longDescription: 'Providing 24/7 customer support, appointment scheduling, technical assistance, retention, and issue resolution. We help businesses improve customer satisfaction while reducing operational costs.',
+    title: 'Customer Support & Experience Management',
+    badge: 'CUSTOMER SUPPORT',
+    description: 'At Trunex BPO, we deliver exceptional customer support solutions that strengthen customer relationships, improve satisfaction, and build long-term brand loyalty.',
+    longDescription: 'At Trunex BPO, we deliver exceptional customer support solutions that strengthen customer relationships, improve satisfaction, and build long-term brand loyalty. Our dedicated support teams provide seamless assistance across voice, chat, email, and digital channels, ensuring every customer interaction is handled with professionalism, efficiency, and care. Whether you need customer service, technical support, order management, or help desk operations, we become a trusted extension of your business.',
     logoUrl: '',
     features: [
-      '24/7 customer support across voice, chat, and email',
-      'Appointment scheduling and calendar management',
-      'Technical assistance and troubleshooting',
-      'Retention programs to reduce customer churn',
-      'Issue resolution with first-contact focus'
+      'Multi-channel Customer Support (Voice, Chat & Email)',
+      'Technical Support & Help Desk Services',
+      'Customer Inquiry & Complaint Resolution',
+      'Order Processing & Account Management',
+      'Appointment Scheduling & Follow-ups',
+      'Customer Retention & Loyalty Programs',
+      'CRM Management & Ticket Handling',
+      '24/7 Dedicated Support Teams',
+      'Quality Assurance & Performance Monitoring',
+      'Customized Support Solutions for Every Industry'
     ],
     caseStudy: {
       title: 'SaaS Platform Support Transformation',

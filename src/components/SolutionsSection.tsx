@@ -124,7 +124,7 @@ export default function SolutionsSection() {
               onClick={() => navigate('/contact')}
               className="bg-cyan-700 hover:bg-cyan-850 text-white px-6 py-3.5 rounded-xl text-xs font-bold uppercase tracking-wider transition-all shadow-md  cursor-pointer"
             >
-              Partner with us
+              Talk to Our Support Experts
             </button>
           </div>
         </div>
