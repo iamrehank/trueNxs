@@ -47,7 +47,7 @@ export default function AboutPage() {
               {[
                 { icon: <ShieldCheck size={15} className="text-cyan-400" />, value: '98.7%', label: 'Customer Satisfaction' },
                 { icon: <Clock size={15} className="text-[#d95f00]" />, value: '24/7', label: 'Support Availability' },
-                { icon: <Zap size={15} className="text-emerald-400" />, value: '4+ Years', label: 'Industry Experience' },
+                { icon: <Zap size={15} className="text-emerald-400" />, value: '8+ Years', label: 'Industry Experience' },
                 { icon: <Users size={15} className="text-cyan-400" />, value: '50+', label: 'Dedicated Professionals' },
               ].map((stat, i) => (
                 <div key={i} className="p-4 bg-white/5 rounded-xl border border-white/8 space-y-2">

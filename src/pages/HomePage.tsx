@@ -81,7 +81,7 @@ export default function HomePage() {
                 <div>
                   <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider block mb-2">Years of Experience</span>
                   <div className="flex items-end gap-1.5 leading-none">
-                    <span className="text-4xl font-extrabold text-white">4+</span>
+                    <span className="text-4xl font-extrabold text-white">8+</span>
                     <span className="text-sm text-slate-400 mb-1">Years</span>
                   </div>
                 </div>
