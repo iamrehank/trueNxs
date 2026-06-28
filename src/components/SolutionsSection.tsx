@@ -153,9 +153,9 @@ export default function SolutionsSection() {
           </p>
 
           <div className="border-t border-slate-800/80 pt-5 flex items-center gap-4 text-[11px] text-slate-500 justify-between">
-            <span>Serving Businesses Worldwide</span>
+            <span>{selectedSrv.rightPanel.footerLeft}</span>
             <span className="font-bold text-cyan-400 flex items-center gap-1">
-              <BarChart size={13} /> Trusted BPO Partner
+              <BarChart size={13} /> {selectedSrv.rightPanel.footerRight}
             </span>
           </div>
         </div>

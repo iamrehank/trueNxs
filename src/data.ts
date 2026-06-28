@@ -31,7 +31,9 @@ export const SERVICES: ServiceItem[] = [
       title: 'Your Trusted BPO Growth Partner',
       label: 'Business-Focused Solutions',
       value: 'Scalable • Reliable • Cost-Effective',
-      summary:'At Trunex BPO, we partner with businesses to streamline operations through customer support, lead generation, back-office services, technical support, and business process outsourcing. Our dedicated teams, flexible engagement models, and commitment to quality enable organizations to reduce costs, increase productivity, and focus on their core business objectives'
+      summary: 'At Trunex BPO, we partner with businesses to streamline operations through customer support, lead generation, back-office services, technical support, and business process outsourcing. Our dedicated teams, flexible engagement models, and commitment to quality enable organizations to reduce costs, increase productivity, and focus on their core business objectives.',
+      footerLeft: 'Serving Businesses Worldwide',
+      footerRight: 'Trusted BPO Partner'
     }
   },
   {
@@ -60,27 +62,34 @@ export const SERVICES: ServiceItem[] = [
       summary: 'Took over tier-1 and tier-2 support for a growing SaaS platform, reducing average handle time by 35% while lifting customer satisfaction scores from 78% to 96%.'
     },
     rightPanel: {
-      badge: 'Why Choose Trunex',
-      title: 'Your Trusted BPO Growth Partner',
-      label: 'Business-Focused Solutions',
-      value: 'Scalable • Reliable • Cost-Effective',
-      summary: 'At Trunex BPO, we partner with businesses to streamline operations through customer support, lead generation, back-office services, technical support, and business process outsourcing. Our dedicated teams, flexible engagement models, and commitment to quality enable organizations to reduce costs, increase productivity, and focus on their core business objectives.'
+      badge: 'Customer Success',
+      title: 'Trusted Customer Support Solutions',
+      label: 'Service Excellence',
+      value: '24/7 Customer Support',
+      summary: 'At Trunex BPO, we provide reliable customer support solutions that help businesses deliver exceptional service across voice, chat, and email. Our dedicated teams focus on faster response times, efficient issue resolution, and personalized customer interactions that strengthen customer relationships and build long-term loyalty.',
+      footerLeft: 'Serving Businesses Worldwide',
+      footerRight: 'Trusted BPO Partner'
     }
   },
   {
     id: 'growth',
     name: 'Trunex Growth',
-    title: 'Lead Generation & Performance Marketing',
+    title: 'Accelerate Business Growth with Qualified Leads',
     badge: 'LEAD GENERATION',
     description: 'Driving business growth through high-quality inbound leads, digital marketing strategies, and conversion-focused campaigns.',
-    longDescription: 'Driving business growth through high-quality inbound leads, digital marketing strategies, call qualification, CRM management, and conversion-focused campaigns that generate measurable results.',
+    longDescription: 'At Trunex BPO, we help businesses connect with the right prospects through customized lead generation solutions. Our experienced team combines market research, lead qualification, appointment setting, CRM management, and strategic outreach to build a consistent sales pipeline. We focus on delivering high-quality opportunities that help businesses increase conversions, strengthen customer relationships, and achieve sustainable growth.',
     logoUrl: '',
     features: [
-      'High-quality inbound lead generation campaigns',
-      'Digital marketing strategy and execution',
-      'Call qualification and lead scoring',
-      'CRM management and pipeline reporting',
-      'Conversion-focused outreach campaigns'
+      'B2B & B2C Lead Generation',
+      'Lead Qualification & Verification',
+      'Appointment Setting',
+      'CRM Management & Pipeline Updates',
+      'Email & Outbound Outreach Campaigns',
+      'Sales Support & Follow-ups',
+      'Customer Data Research',
+      'Performance Tracking & Reporting',
+      'Dedicated Lead Generation Teams',
+      'Scalable Growth Solutions'
     ],
     caseStudy: {
       title: 'B2B Lead Pipeline Acceleration',
@@ -88,27 +97,34 @@ export const SERVICES: ServiceItem[] = [
       summary: 'Built and managed a full-funnel inbound lead generation engine for a mid-market B2B client, tripling qualified pipeline volume within 90 days through optimized digital campaigns.'
     },
     rightPanel: {
-      badge: 'Why Choose Trunex',
-      title: 'Your Trusted BPO Growth Partner',
-      label: 'Business-Focused Solutions',
-      value: 'Scalable • Reliable • Cost-Effective',
-      summary: 'At Trunex BPO, we partner with businesses to streamline operations through customer support, lead generation, back-office services, technical support, and business process outsourcing. Our dedicated teams, flexible engagement models, and commitment to quality enable organizations to reduce costs, increase productivity, and focus on their core business objectives.'
+      badge: 'Business Growth',
+      title: 'More Opportunities. Better Conversions.',
+      label: 'Smart Lead Generation',
+      value: 'Connecting You with the Right Customers',
+      summary: 'Trunex BPO delivers customized lead generation solutions that help businesses expand their reach, improve prospect engagement, and build stronger sales pipelines. Our data-driven approach ensures you receive qualified opportunities that support long-term business growth.',
+      footerLeft: 'Dedicated Growth Teams',
+      footerRight: 'Results-Driven Approach'
     }
   },
   {
     id: 'ops',
     name: 'Trunex Ops',
-    title: 'Back Office & Business Process Outsourcing',
-    badge: 'BACK OFFICE & BPO',
+    title: 'Streamline Operations. Maximize Efficiency.',
+    badge: 'BACK OFFICE & BUSINESS PROCESS OUTSOURCING',
     description: 'Offering end-to-end back-office solutions including data entry, CRM updates, quality assurance, reporting, and compliance.',
-    longDescription: 'Offering end-to-end back-office solutions including data entry, CRM updates, quality assurance, reporting, compliance, and administrative support to streamline operations and improve efficiency.',
+    longDescription: 'At Trunex BPO, we help businesses simplify complex operations through reliable back-office and business process outsourcing solutions. From data management and CRM administration to document processing, quality assurance, and administrative support, our experienced teams handle your operational workload with precision, security, and efficiency—allowing you to focus on growing your business.',
     logoUrl: '',
     features: [
-      'End-to-end data entry and CRM updates',
-      'Quality assurance monitoring and reporting',
-      'Compliance documentation and administration',
-      'Workflow automation and process optimization',
-      'Scalable back-office support teams'
+      'Back Office Process Management',
+      'Data Entry & Document Processing',
+      'CRM Management & Database Updates',
+      'Quality Assurance & Compliance Monitoring',
+      'Administrative & Virtual Assistant Services',
+      'Order Processing & Account Management',
+      'Email Support & Ticket Management',
+      'Reporting & Business Analytics',
+      'Workflow Optimization',
+      'Dedicated Back Office Teams'
     ],
     caseStudy: {
       title: 'E-Commerce Operations Scale-Up',
@@ -116,11 +132,13 @@ export const SERVICES: ServiceItem[] = [
       summary: 'Took over order management, returns processing, and CRM hygiene for a fast-growing e-commerce brand, cutting back-office processing time by 60% while maintaining 99.8% data accuracy.'
     },
     rightPanel: {
-      badge: 'Why Choose Trunex',
-      title: 'Your Trusted BPO Growth Partner',
-      label: 'Business-Focused Solutions',
-      value: 'Scalable • Reliable • Cost-Effective',
-      summary: 'At Trunex BPO, we partner with businesses to streamline operations through customer support, lead generation, back-office services, technical support, and business process outsourcing. Our dedicated teams, flexible engagement models, and commitment to quality enable organizations to reduce costs, increase productivity, and focus on their core business objectives.'
+      badge: 'Operational Excellence',
+      title: 'Smarter Processes. Better Business.',
+      label: 'Streamlined Operations',
+      value: 'Efficient • Accurate • Scalable',
+      summary: 'Our back-office specialists help businesses improve productivity by managing time-consuming operational tasks with accuracy and consistency. Through efficient workflows, secure data management, and dedicated support teams, we reduce administrative burden and enable organizations to focus on strategic growth.',
+      footerLeft: 'Operational Excellence',
+      footerRight: 'Trusted BPO Partner'
     }
   }
 ];

@@ -18,6 +18,8 @@ export interface ServiceItem {
     label: string;
     value: string;
     summary: string;
+    footerLeft: string;
+    footerRight: string;
   };
 }
 
