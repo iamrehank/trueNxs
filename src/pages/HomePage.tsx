@@ -95,13 +95,13 @@ export default function HomePage() {
         <div className="text-center max-w-2xl mx-auto space-y-3">
           <h2 className="font-sans text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">So, Who We Are?</h2>
           <p className="text-slate-500 text-sm leading-relaxed">
-            Trunex Global BPO private architecture bridges human empathy with modern workflow automation to ensure your metrics remain pristine.
+            At Trunex Global BPO, we help businesses grow by providing reliable, scalable, and high-performing outsourcing solutions. From customer support and sales to back-office operations, our experienced professionals become an extension of your team—delivering exceptional service, improving efficiency, and reducing operational costs while maintaining the highest standards of quality.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {[
-            { label: 'Commitment One', title: 'Client Centric Team Mapping', icon: <Users size={18} className="text-[#d95f00]" />, body: 'We recruit, train, and configure specialized offshore and nearshore teams that bind directly with your organizational DNA. We assign transition managers to streamline standard procedures without causing internal operational friction.' },
-            { label: 'Commitment Two', title: 'Rigid Quality Guidelines', icon: <ShieldCheck size={18} className="text-[#d95f00]" />, body: 'Our centers operate with ISO quality controls, daily performance auditing, dual-continent system failover paths, and high-security file encryption vaults. We guarantee standard SLA adherence on every transactional record.' }
+            { label: 'Commitment One', title: 'Client-Centric Team Mapping', icon: <Users size={18} className="text-[#d95f00]" />, body: 'Every business is unique, and so is our approach. We carefully recruit, train, and manage dedicated teams that align with your goals, processes, and company culture. Whether you need customer support, sales, lead generation, or back-office assistance, we build teams that integrate seamlessly with your operations and deliver measurable results from day one.' },
+            { label: 'Commitment Two', title: 'Quality Without Compromise', icon: <ShieldCheck size={18} className="text-[#d95f00]" />, body: 'Quality is at the core of everything we do. Our dedicated quality assurance team continuously monitors performance, provides regular coaching, and follows strict compliance standards to ensure every customer interaction meets your expectations. With transparent reporting, secure processes, and continuous improvement, we help your business maintain outstanding service quality and customer satisfaction.' }
           ].map((card, i) => (
             <div key={i} className="bg-white border border-slate-200/80 p-8 rounded-2xl shadow-sm relative overflow-hidden group hover:border-cyan-500/50 transition-all duration-300">
               <div className="absolute top-0 left-0 w-1.5 h-full bg-cyan-600"></div>
