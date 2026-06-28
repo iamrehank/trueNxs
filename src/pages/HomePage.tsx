@@ -59,32 +59,58 @@ export default function HomePage() {
         </div>
 
         <div className="lg:col-span-5 relative">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-cyan-200/30 rounded-full blur-3xl -z-10"></div>
-          <div className="bg-white border border-slate-200/90 rounded-2xl p-6 md:p-8 shadow-xl space-y-6 relative overflow-hidden">
-            <span className="absolute top-0 right-0 text-[9px] font-bold text-cyan-600 bg-cyan-50 px-3 py-1 uppercase rounded-bl-xl tracking-wider">
-              Verified SEC Platform
-            </span>
-            <h3 className="font-display text-base font-bold text-slate-950 flex items-center gap-2">
-              <Building size={16} className="text-cyan-700" /><span>Cluster Metrics</span>
-            </h3>
-            <div className="grid grid-cols-2 gap-4">
-              <div className="p-4 bg-slate-50 rounded-xl border border-slate-100">
-                <span className="text-[10px] text-slate-400 font-bold uppercase block tracking-wider mb-1">Retention Rate</span>
-                <span className="text-xl font-extrabold text-[#d95f00]">98.7%</span>
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-cyan-300/20 rounded-full blur-3xl -z-10 pointer-events-none" />
+          <div className="bg-[#131b2e] text-white rounded-2xl p-7 md:p-9 shadow-2xl relative overflow-hidden border border-slate-800">
+
+            {/* Decorative glows */}
+            <div className="absolute -top-12 -right-12 w-48 h-48 bg-cyan-500/15 rounded-full blur-3xl pointer-events-none" />
+            <div className="absolute -bottom-10 -left-10 w-36 h-36 bg-[#d95f00]/10 rounded-full blur-2xl pointer-events-none" />
+
+            {/* Header */}
+            <div className="flex items-center justify-between mb-8 relative">
+              <span className="text-[10px] font-bold text-cyan-400 uppercase tracking-widest flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse block" />
+                Performance Overview
+              </span>
+              <span className="text-[9px] text-slate-500 font-semibold uppercase tracking-wider bg-white/5 border border-white/10 px-2 py-1 rounded-md">2025</span>
+            </div>
+
+            {/* Stats */}
+            <div className="space-y-4 mb-8 relative">
+              <div className="p-5 bg-white/5 border border-white/8 rounded-xl flex items-center justify-between group hover:bg-white/8 transition-colors">
+                <div>
+                  <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider block mb-2">Years of Experience</span>
+                  <div className="flex items-end gap-1.5 leading-none">
+                    <span className="text-4xl font-extrabold text-white">4+</span>
+                    <span className="text-sm text-slate-400 mb-1">Years</span>
+                  </div>
+                </div>
+                <div className="w-12 h-12 rounded-xl bg-[#d95f00]/15 border border-[#d95f00]/20 flex items-center justify-center shrink-0">
+                  <TrendingUp size={22} className="text-[#d95f00]" />
+                </div>
               </div>
-              <div className="p-4 bg-slate-50 rounded-xl border border-slate-100">
-                <span className="text-[10px] text-slate-400 font-bold uppercase block tracking-wider mb-1">Node Locations</span>
-                <span className="text-xl font-extrabold text-slate-850">4 Global</span>
+
+              <div className="p-5 bg-white/5 border border-white/8 rounded-xl flex items-center justify-between group hover:bg-white/8 transition-colors">
+                <div>
+                  <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider block mb-2">Monthly Sales Generated</span>
+                  <div className="flex items-end gap-1.5 leading-none">
+                    <span className="text-4xl font-extrabold text-cyan-400">300+</span>
+                    <span className="text-sm text-slate-400 mb-1">Sales</span>
+                  </div>
+                </div>
+                <div className="w-12 h-12 rounded-xl bg-cyan-500/15 border border-cyan-500/20 flex items-center justify-center shrink-0">
+                  <PhoneCall size={22} className="text-cyan-400" />
+                </div>
               </div>
             </div>
-            <div className="p-4 bg-cyan-50/20 border border-cyan-100/40 rounded-xl flex items-center gap-3.5">
-              <div className="w-8 h-8 rounded-full bg-cyan-150 flex items-center justify-center text-cyan-700 shrink-0">
-                <ShieldCheck size={16} />
+
+            {/* Footer trust signal */}
+            <div className="border-t border-white/10 pt-5 flex items-center gap-3 relative">
+              <div className="relative flex h-2.5 w-2.5 shrink-0">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-60" />
+                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500" />
               </div>
-              <div className="text-xs">
-                <span className="font-bold text-slate-850 block mb-0.5">ISO Certified Operations</span>
-                <span className="text-slate-500">Fully aligned under ISO 9001 and ISO 27001 data blueprints.</span>
-              </div>
+              <span className="text-xs text-slate-400">Operations active — serving clients across multiple industries</span>
             </div>
           </div>
         </div>
