@@ -189,8 +189,8 @@ export default function ContactForm({ onAddInquiry, onOpenLocations }: ContactFo
                   Address
                 </p>
                 <p className="text-slate-700 leading-relaxed text-sm">
-                  302, Siddharth Tower, Station Road,<br />
-                  Kalyan West, Maharashtra 421301
+                  109, Sapphire Building,<br />
+                  Kalyan, Thane, Maharashtra 421301, India
                 </p>
               </div>
             </div>
@@ -202,8 +202,7 @@ export default function ContactForm({ onAddInquiry, onOpenLocations }: ContactFo
                 <p className="font-sans font-bold text-[11px] text-slate-400 uppercase tracking-wider mb-1">
                   Phone Operations
                 </p>
-                <p className="text-slate-700 text-sm font-semibold">+91 (0251) 500 0123</p>
-                <p className="text-slate-500 text-xs">+91 98765 43210 (Escalations)</p>
+                <p className="text-slate-700 text-sm font-semibold">+91 93211 00206</p>
               </div>
             </div>
 

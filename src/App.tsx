@@ -104,7 +104,7 @@ export default function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/solutions" element={<SolutionsPage />} />
-            <Route path="/about" element={<AboutPage onOpenCareers={() => setIsCareersOpen(true)} />} />
+            <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={
               <ContactPage
                 onAddInquiry={handleAddInquiry}

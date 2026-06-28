@@ -35,7 +35,9 @@ export interface GlobalLocation {
   id: string;
   city: string;
   country: string;
+  companyName: string;
   address: string;
+  businessHours: string;
   phone: string;
   alternativePhone?: string;
   email: string;

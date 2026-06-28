@@ -177,14 +177,27 @@ export const TEAM: TeamMember[] = [
 export const LOCATIONS: GlobalLocation[] = [
   {
     id: 'kalyan',
-    city: 'Kalyan West',
+    city: 'Kalyan',
     country: 'India',
-    address: '302, Siddharth Tower, Station Road, Kalyan West, Maharashtra 421301',
-    phone: '+91 (0251) 500 0123',
-    alternativePhone: '+91 98765 43210',
+    companyName: 'Trunex BPO Pvt. Ltd.',
+    address: '109, Sapphire Building, Kalyan, Thane, Maharashtra 421301, India',
+    businessHours: 'Monday – Saturday, 9:00 AM – 6:00 PM (IST)',
+    phone: '+91 93211 00206',
     email: 'contact@trunexbpo.com',
     timezone: 'Asia/Kolkata',
     coordinates: { x: 73.13, y: 19.24 }
+  },
+  {
+    id: 'delaware',
+    city: 'Dover',
+    country: 'United States',
+    companyName: 'Trunex BPO LLC',
+    address: '8 The Green, Suite A, City of Dover, Delaware 19901, USA',
+    businessHours: 'Monday – Friday, 9:00 AM – 5:00 PM (EST)',
+    phone: '+1 (302) 618 3669',
+    email: 'contact@trunexbpo.com',
+    timezone: 'America/New_York',
+    coordinates: { x: -75.52, y: 39.16 }
   }
 ];
 

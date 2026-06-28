@@ -98,10 +98,10 @@ export default function LocationDetails({ onClose }: LocationDetailsProps) {
             <div className="flex justify-between items-baseline mb-6 border-b border-slate-100 pb-5 pr-8">
               <div>
                 <h4 className="font-sans text-2xl font-bold text-slate-900 leading-tight">
-                  {selectedLoc.city} Delivery Center
+                  {selectedLoc.companyName}
                 </h4>
                 <p className="text-xs font-semibold text-slate-400 uppercase tracking-widest mt-1">
-                  Trunex HQ / Service Cluster
+                  {selectedLoc.city}, {selectedLoc.country}
                 </p>
               </div>
             </div>
@@ -118,19 +118,19 @@ export default function LocationDetails({ onClose }: LocationDetailsProps) {
                 </p>
               </div>
 
-              {/* Dynamic local clock */}
+              {/* Business Hours + Local Clock */}
               <div className="space-y-1.5 p-5 rounded-2xl bg-cyan-50/20 border border-cyan-100/50 flex flex-col justify-between">
                 <div>
                   <div className="flex items-center gap-2 text-cyan-700 font-bold text-xs uppercase tracking-wider">
                     <Clock size={15} />
-                    <span>Local Current Time</span>
+                    <span>Business Hours</span>
                   </div>
-                  <span className="font-mono text-xl font-extrabold text-cyan-800 tracking-tight block pt-3 leading-none">
-                    {localTimes[selectedLoc.id] || '--:--:--'}
-                  </span>
+                  <p className="text-slate-700 text-sm font-semibold pt-2 leading-snug">
+                    {selectedLoc.businessHours}
+                  </p>
                 </div>
-                <span className="text-[10px] text-cyan-700 font-bold uppercase tracking-wider block">
-                  Timezone: {selectedLoc.timezone}
+                <span className="font-mono text-xs font-bold text-cyan-800 tracking-tight block pt-2">
+                  Local time: {localTimes[selectedLoc.id] || '--:--:--'}
                 </span>
               </div>
             </div>

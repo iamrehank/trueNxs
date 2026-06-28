@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { TEAM } from '../data';
-import { Users, ArrowUpRight, Award, Clock, ShieldCheck, Zap } from 'lucide-react';
+import { Users, Award, Clock, ShieldCheck, Zap } from 'lucide-react';
 import { motion } from 'motion/react';
 import corporateCsrImage from '../assets/images/corporate_csr_1781205765498.jpg';
 import imranImage from '../assets/images/imran.jpeg';
@@ -10,11 +10,8 @@ const teamImages: Record<string, string> = {
   'Imran Sayyed': imranImage,
 };
 
-interface AboutPageProps {
-  onOpenCareers: () => void;
-}
-
-export default function AboutPage({ onOpenCareers }: AboutPageProps) {
+export default function AboutPage() {
+  const navigate = useNavigate();
   const [expandedLeader, setExpandedLeader] = useState<string | null>(null);
 
   return (
@@ -122,37 +119,39 @@ export default function AboutPage({ onOpenCareers }: AboutPageProps) {
       </div>
 
 
-      {/* CSR */}
+      {/* About Trunex BPO */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         <div className="lg:col-span-5 h-64 rounded-2xl overflow-hidden relative border border-slate-200">
-          <img src={corporateCsrImage} alt="Corporate CSR" className="w-full h-full object-cover" />
+          <img src={corporateCsrImage} alt="Trunex BPO" className="w-full h-full object-cover" />
         </div>
         <div className="lg:col-span-7 space-y-6">
-          <span className="text-[10px] font-bold text-cyan-700 tracking-wider uppercase block">Corporate Accountability</span>
-          <h3 className="font-sans text-2xl font-bold text-slate-900 tracking-tight">Environmental Metrics & CSR Commits</h3>
+          <span className="text-[10px] font-bold text-cyan-700 tracking-wider uppercase block">About Trunex BPO</span>
+          <h3 className="font-sans text-2xl font-bold text-slate-900 tracking-tight">Your Trusted Business Process Outsourcing Partner</h3>
           <p className="text-slate-600 text-sm leading-relaxed">
-            Trunex enforces localized commitments to sustainable growth. We support digital literacy initiatives inside the Kalyan-Dombivli urban cluster, equipping youth with modern process and technology tools.
+            Trunex BPO Pvt. Ltd. is a customer-focused Business Process Outsourcing company committed to helping businesses improve efficiency, enhance customer experiences, and accelerate growth. We deliver customized outsourcing solutions across customer support, lead generation, sales support, technical assistance, and back-office operations, enabling organizations to focus on their core business while we manage their day-to-day processes.
           </p>
           <p className="text-slate-600 text-sm leading-relaxed">
-            By scaling server deployments onto carbon-neutral cloud providers, we achieve cost reductions which are directly reflected in client SLAs, keeping overall energy overhead minimal.
+            With a team of experienced professionals, modern technology, and a commitment to operational excellence, Trunex BPO provides scalable, secure, and cost-effective solutions tailored to each client's unique requirements. We believe in building long-term partnerships through transparency, innovation, reliability, and exceptional service delivery.
           </p>
         </div>
       </div>
 
-      {/* Join Team CTA */}
-      <div className="bg-[#131b2e] text-white rounded-3xl p-8 md:p-12 text-center space-y-6 relative border border-slate-800">
-        <h3 className="font-sans text-2xl md:text-3xl font-extrabold tracking-tight">We are growing our operational nodes.</h3>
-        <p className="text-slate-400 text-xs md:text-sm max-w-xl mx-auto leading-relaxed">
-          Trunex is scouting compliance professionals, CRM operators, and system automation architects for our global offices.
+      {/* Why Choose Trunex BPO Banner */}
+      <div className="bg-[#131b2e] border border-slate-800 rounded-3xl p-8 md:p-12 space-y-5 relative overflow-hidden">
+        <div className="absolute -top-12 -right-12 w-48 h-48 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute -bottom-10 -left-10 w-36 h-36 bg-[#d95f00]/10 rounded-full blur-2xl pointer-events-none" />
+        <h3 className="font-sans text-xl md:text-2xl font-extrabold text-white tracking-tight">Why Choose Trunex BPO?</h3>
+        <p className="text-slate-400 text-sm leading-relaxed max-w-3xl">
+          Businesses choose Trunex BPO because we deliver more than outsourcing—we become an extension of your team. Our expertise, customer-first approach, flexible engagement models, and dedication to quality help organizations reduce costs, improve productivity, and achieve sustainable growth.
         </p>
         <button
-          onClick={onOpenCareers}
-          className="bg-[#d95f00] hover:bg-[#b04d00] text-white px-8 py-3.5 rounded-xl text-xs font-bold uppercase tracking-wider transition-all shadow-md inline-flex items-center gap-1.5 cursor-pointer"
+          onClick={() => navigate('/contact')}
+          className="bg-cyan-700 hover:bg-cyan-800 text-white px-7 py-3.5 rounded-xl text-xs font-bold uppercase tracking-wider transition-all shadow-md cursor-pointer"
         >
-          <span>Browse Careers / Join Team</span>
-          <ArrowUpRight size={14} />
+          Learn More About Us
         </button>
       </div>
+
     </motion.div>
   );
 }
