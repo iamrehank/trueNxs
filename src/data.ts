@@ -4,17 +4,22 @@ export const SERVICES: ServiceItem[] = [
   {
     id: 'connect',
     name: 'Trunex Connect',
-    title: 'Inbound Sales & Warm Transfers',
-    badge: 'INBOUND SALES',
-    description: 'Delivering high-converting inbound call handling and warm transfer solutions for Home Security and other service industries.',
-    longDescription: 'Delivering high-converting inbound call handling and warm transfer solutions for Home Security and other service industries. Our experienced agents maximize conversions while ensuring a seamless customer experience.',
+    title: 'Smart Outsourcing Solutions for Growing Businesses',
+    badge: 'BUSINESS PROCESS OUTSOURCING',
+    description: 'At Trunex BPO, we help businesses streamline operations, enhance customer experiences, and accelerate growth through customized outsourcing solutions.',
+    longDescription: 'At Trunex BPO, we help businesses streamline operations, enhance customer experiences, and accelerate growth through customized outsourcing solutions. Our experienced professionals provide customer support, lead generation, technical assistance, back-office operations, and business process management tailored to your unique requirements. By combining skilled talent, advanced technology, and industry best practices, we deliver reliable, scalable, and cost-effective solutions that allow you to focus on growing your business while we handle your operational needs.',
     logoUrl: '',
     features: [
-      'High-converting inbound call handling',
-      'Seamless warm transfer solutions for Home Security',
-      'Trained agents focused on maximizing conversions',
-      'Multi-channel intake management (Voice, Chat)',
-      'Real-time script optimization and agent coaching'
+      'Customer Support Services',
+      'Lead Generation & Appointment Setting',
+      'Sales Support',
+      'Technical Support',
+      'Back Office Operations',
+      'Data Entry & CRM Management',
+      'Email & Chat Support',
+      'Quality Assurance & Performance Monitoring',
+      'Dedicated Remote Teams',
+      '24/7 Business Support'
     ],
     caseStudy: {
       title: 'Home Security Provider Conversion Boost',

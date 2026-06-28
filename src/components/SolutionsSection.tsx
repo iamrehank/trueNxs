@@ -29,13 +29,13 @@ export default function SolutionsSection() {
       {/* Intro Metrics Banner / Title header */}
       <div className="text-center max-w-3xl mx-auto space-y-4">
         <span className="text-xs font-bold text-cyan-700 uppercase tracking-widest bg-cyan-100/40 px-3/5 py-1.5 rounded-full inline-block">
-          Enterprise Competence
+          Enterprise Solutions
         </span>
         <h2 className="font-sans text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">
-          Strategic Domain Expertise
+          Business Process Outsourcing That Drives Growth
         </h2>
         <p className="text-slate-500 text-base md:text-lg leading-relaxed">
-          At Trunex, we do not simply supply headcount. We engineer high-powered, technology-wrapped operations that drive compliance, lower overhead, and scale seamlessly with your seasonal transaction trends.
+          At Trunex BPO, we deliver intelligent outsourcing solutions that help businesses improve customer experience, reduce operational costs, and scale efficiently. Our expert teams specialize in inbound and outbound customer support, lead generation, appointment setting, sales support, technical assistance, and back-office operations. By combining skilled professionals with modern technology and proven processes, we become a seamless extension of your business—allowing you to focus on growth while we manage your day-to-day operations with excellence.
         </p>
       </div>
 
@@ -124,46 +124,39 @@ export default function SolutionsSection() {
               onClick={() => navigate('/contact')}
               className="bg-cyan-700 hover:bg-cyan-850 text-white px-6 py-3.5 rounded-xl text-xs font-bold uppercase tracking-wider transition-all shadow-md  cursor-pointer"
             >
-              Configure Cost Estimate
+              Partner with us
             </button>
-            <a 
-              href="mailto:contact@trunexbpo.com?subject=SLA%20Standards%20Inquiry%20-%20Trunex%20${selectedSrv.name}"
-              className="border border-slate-205 text-slate-600 hover:border-slate-350 px-6 py-3.5 rounded-xl text-xs font-bold uppercase tracking-wider transition-all cursor-pointer"
-            >
-              Inquire SLA Standards
-            </a>
           </div>
         </div>
 
-        {/* Right Side: Case Study highlight */}
+        {/* Right Side: Why Choose Trunex */}
         <div className="lg:col-span-5 bg-gradient-to-br from-[#131b2e] to-[#1a253e] text-white rounded-2xl p-8 shadow-sm space-y-6 relative border border-slate-800">
           <span className="p-1 px-2.5 bg-cyan-500/10 text-cyan-400 rounded-md text-[10px] font-extrabold uppercase tracking-widest block w-fit">
-            Proven Performance
+            Why Choose Trunex
           </span>
 
           <h4 className="font-sans text-lg font-bold">
-            {selectedSrv.caseStudy.title}
+            Your Trusted BPO Growth Partner
           </h4>
 
-          {/* Metric visualization */}
-          <div className="p-4 bg-white/5 border border-white/10 rounded-xl space-y-1">
-            <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider">
-              Measurable Success Metric
-            </span>
-            <span className="text-2xl md:text-3.5xl font-extrabold text-cyan-400 tracking-tight block">
-              {selectedSrv.caseStudy.metrics}
+          <div className="p-4 bg-white/5 border border-white/10 rounded-xl">
+            <span className="text-xl font-extrabold text-cyan-400 tracking-tight block">
+              Business-Focused Solutions
             </span>
           </div>
 
-          <p className="text-slate-400 text-xs leading-relaxed">
-            {selectedSrv.caseStudy.summary}
+          <p className="text-slate-400 text-sm leading-relaxed font-semibold tracking-wide">
+            Scalable &bull; Reliable &bull; Cost-Effective
           </p>
 
-          <div className="border-t border-slate-800/80 pt-5 flex items-center gap-4 text-[11px] text-slate-500 justify-between">
-            <span>Audit Year: 2026</span>
-            <span className="font-bold text-cyan-400 flex items-center gap-1">
-              <BarChart size={13} /> Secure Verified Case
-            </span>
+          <p className="text-slate-400 text-xs leading-relaxed">
+            At Trunex BPO, we partner with businesses to streamline operations through customer support, lead generation, back-office services, technical support, and business process outsourcing. Our dedicated teams, flexible engagement models, and commitment to quality enable organizations to reduce costs, increase productivity, and focus on their core business objectives.
+          </p>
+
+          <div className="border-t border-slate-800/80 pt-5 flex items-center gap-2 text-[11px] text-slate-500">
+            <BarChart size={13} className="text-cyan-400 shrink-0" />
+            <span className="text-cyan-400 font-bold">Serving Businesses Worldwide</span>
+            <span>— Trusted BPO Partner</span>
           </div>
         </div>
 
