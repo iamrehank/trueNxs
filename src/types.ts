@@ -12,6 +12,13 @@ export interface ServiceItem {
     metrics: string;
     summary: string;
   };
+  rightPanel: {
+    badge: string;
+    title: string;
+    label: string;
+    value: string;
+    summary: string;
+  };
 }
 
 export interface TeamMember {

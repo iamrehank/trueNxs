@@ -25,6 +25,13 @@ export const SERVICES: ServiceItem[] = [
       title: 'Home Security Provider Conversion Boost',
       metrics: '+42% Lead-to-Sale Conversion',
       summary: 'Deployed a dedicated inbound sales team for a national home security brand, reducing call abandonment by 28% and boosting qualified warm transfers to closers by 42%.'
+    },
+    rightPanel: {
+      badge: 'Why Choose Trunex',
+      title: 'Your Trusted BPO Growth Partner',
+      label: 'Business-Focused Solutions',
+      value: 'Scalable • Reliable • Cost-Effective',
+      summary:'At Trunex BPO, we partner with businesses to streamline operations through customer support, lead generation, back-office services, technical support, and business process outsourcing. Our dedicated teams, flexible engagement models, and commitment to quality enable organizations to reduce costs, increase productivity, and focus on their core business objectives'
     }
   },
   {
@@ -51,6 +58,13 @@ export const SERVICES: ServiceItem[] = [
       title: 'SaaS Platform Support Transformation',
       metrics: '96% CSAT Score Achieved',
       summary: 'Took over tier-1 and tier-2 support for a growing SaaS platform, reducing average handle time by 35% while lifting customer satisfaction scores from 78% to 96%.'
+    },
+    rightPanel: {
+      badge: 'Why Choose Trunex',
+      title: 'Your Trusted BPO Growth Partner',
+      label: 'Business-Focused Solutions',
+      value: 'Scalable • Reliable • Cost-Effective',
+      summary: 'At Trunex BPO, we partner with businesses to streamline operations through customer support, lead generation, back-office services, technical support, and business process outsourcing. Our dedicated teams, flexible engagement models, and commitment to quality enable organizations to reduce costs, increase productivity, and focus on their core business objectives.'
     }
   },
   {
@@ -72,6 +86,13 @@ export const SERVICES: ServiceItem[] = [
       title: 'B2B Lead Pipeline Acceleration',
       metrics: '3.8x Qualified Lead Volume',
       summary: 'Built and managed a full-funnel inbound lead generation engine for a mid-market B2B client, tripling qualified pipeline volume within 90 days through optimized digital campaigns.'
+    },
+    rightPanel: {
+      badge: 'Why Choose Trunex',
+      title: 'Your Trusted BPO Growth Partner',
+      label: 'Business-Focused Solutions',
+      value: 'Scalable • Reliable • Cost-Effective',
+      summary: 'At Trunex BPO, we partner with businesses to streamline operations through customer support, lead generation, back-office services, technical support, and business process outsourcing. Our dedicated teams, flexible engagement models, and commitment to quality enable organizations to reduce costs, increase productivity, and focus on their core business objectives.'
     }
   },
   {
@@ -93,6 +114,13 @@ export const SERVICES: ServiceItem[] = [
       title: 'E-Commerce Operations Scale-Up',
       metrics: '60% Reduction in Processing Time',
       summary: 'Took over order management, returns processing, and CRM hygiene for a fast-growing e-commerce brand, cutting back-office processing time by 60% while maintaining 99.8% data accuracy.'
+    },
+    rightPanel: {
+      badge: 'Why Choose Trunex',
+      title: 'Your Trusted BPO Growth Partner',
+      label: 'Business-Focused Solutions',
+      value: 'Scalable • Reliable • Cost-Effective',
+      summary: 'At Trunex BPO, we partner with businesses to streamline operations through customer support, lead generation, back-office services, technical support, and business process outsourcing. Our dedicated teams, flexible engagement models, and commitment to quality enable organizations to reduce costs, increase productivity, and focus on their core business objectives.'
     }
   }
 ];

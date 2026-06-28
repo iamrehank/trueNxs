@@ -129,33 +129,33 @@ export default function SolutionsSection() {
           </div>
         </div>
 
-        {/* Right Side: Case Study / Proven Performance */}
+        {/* Right Side: Dynamic from selectedSrv.rightPanel + caseStudy */}
         <div className="lg:col-span-5 bg-gradient-to-br from-[#131b2e] to-[#1a253e] text-white rounded-2xl p-8 shadow-sm space-y-6 relative border border-slate-800">
           <span className="p-1 px-2.5 bg-cyan-500/10 text-cyan-400 rounded-md text-[10px] font-extrabold uppercase tracking-widest block w-fit">
-            Proven Performance
+            {selectedSrv.rightPanel.badge}
           </span>
 
-          <h4 className="font-sans text-lg font-bold">
-            {selectedSrv.caseStudy.title}
+          <h4 className="font-sans text-sm font-bold leading-snug">
+            {selectedSrv.rightPanel.title}
           </h4>
 
           <div className="p-4 bg-white/5 border border-white/10 rounded-xl space-y-1">
             <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider">
-              Measurable Success Metric
+              {selectedSrv.rightPanel.label}
             </span>
-            <span className="text-2xl font-extrabold text-cyan-400 tracking-tight block">
-              {selectedSrv.caseStudy.metrics}
+            <span className="text-xl font-extrabold text-cyan-400 tracking-tight block">
+              {selectedSrv.rightPanel.value}
             </span>
           </div>
 
           <p className="text-slate-400 text-xs leading-relaxed">
-            {selectedSrv.caseStudy.summary}
+            {selectedSrv.rightPanel.summary}
           </p>
 
           <div className="border-t border-slate-800/80 pt-5 flex items-center gap-4 text-[11px] text-slate-500 justify-between">
-            <span>Audit Year: 2026</span>
+            <span>Serving Businesses Worldwide</span>
             <span className="font-bold text-cyan-400 flex items-center gap-1">
-              <BarChart size={13} /> Secure Verified Case
+              <BarChart size={13} /> Trusted BPO Partner
             </span>
           </div>
         </div>
