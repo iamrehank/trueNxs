@@ -129,34 +129,34 @@ export default function SolutionsSection() {
           </div>
         </div>
 
-        {/* Right Side: Why Choose Trunex */}
+        {/* Right Side: Case Study / Proven Performance */}
         <div className="lg:col-span-5 bg-gradient-to-br from-[#131b2e] to-[#1a253e] text-white rounded-2xl p-8 shadow-sm space-y-6 relative border border-slate-800">
           <span className="p-1 px-2.5 bg-cyan-500/10 text-cyan-400 rounded-md text-[10px] font-extrabold uppercase tracking-widest block w-fit">
-            Why Choose Trunex
+            Proven Performance
           </span>
 
           <h4 className="font-sans text-lg font-bold">
-            Your Trusted BPO Growth Partner
+            {selectedSrv.caseStudy.title}
           </h4>
 
-          <div className="p-4 bg-white/5 border border-white/10 rounded-xl">
-            <span className="text-xl font-extrabold text-cyan-400 tracking-tight block">
-              Business-Focused Solutions
+          <div className="p-4 bg-white/5 border border-white/10 rounded-xl space-y-1">
+            <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider">
+              Measurable Success Metric
+            </span>
+            <span className="text-2xl font-extrabold text-cyan-400 tracking-tight block">
+              {selectedSrv.caseStudy.metrics}
             </span>
           </div>
 
-          <p className="text-slate-400 text-sm leading-relaxed font-semibold tracking-wide">
-            Scalable &bull; Reliable &bull; Cost-Effective
-          </p>
-
           <p className="text-slate-400 text-xs leading-relaxed">
-            At Trunex BPO, we partner with businesses to streamline operations through customer support, lead generation, back-office services, technical support, and business process outsourcing. Our dedicated teams, flexible engagement models, and commitment to quality enable organizations to reduce costs, increase productivity, and focus on their core business objectives.
+            {selectedSrv.caseStudy.summary}
           </p>
 
-          <div className="border-t border-slate-800/80 pt-5 flex items-center gap-2 text-[11px] text-slate-500">
-            <BarChart size={13} className="text-cyan-400 shrink-0" />
-            <span className="text-cyan-400 font-bold">Serving Businesses Worldwide</span>
-            <span>— Trusted BPO Partner</span>
+          <div className="border-t border-slate-800/80 pt-5 flex items-center gap-4 text-[11px] text-slate-500 justify-between">
+            <span>Audit Year: 2026</span>
+            <span className="font-bold text-cyan-400 flex items-center gap-1">
+              <BarChart size={13} /> Secure Verified Case
+            </span>
           </div>
         </div>
 
