@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { ExternalLink, Share2 } from 'lucide-react';
+import tlogo from '../assets/images/tlogo.png';
 
 interface FooterProps {
   onOpenLocations: () => void;
@@ -19,9 +20,8 @@ export default function Footer({ onOpenLocations }: FooterProps) {
 
         {/* Brand */}
         <div className="space-y-6">
-          <div className="flex items-center gap-2">
-            <span className="font-sans text-2xl font-extrabold tracking-tight text-white">Trunex</span>
-            <span className="h-1.5 w-1.5 bg-cyan-400 rounded-full mt-2"></span>
+          <div className="flex items-center">
+            <img src={tlogo} alt="Trunex BPO" className="h-20 w-auto object-contain " />
           </div>
           <p className="text-slate-400 text-sm leading-relaxed">
             Trunex BPO Pvt. Ltd. empowers businesses with reliable outsourcing solutions. We combine skilled professionals, innovative technology, and customer-focused strategies to deliver operational excellence, exceptional service, and sustainable business growth.
