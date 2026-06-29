@@ -73,7 +73,7 @@ export default function AboutPage() {
             At Trunex BPO Pvt. Ltd., our leadership team is committed to delivering operational excellence, fostering innovation, and building long-term client partnerships. Together, we bring expertise, strategic vision, and a customer-first approach to help businesses grow through reliable and scalable outsourcing solutions.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 gap-8 max-w-2xl mx-auto w-full">
           {TEAM.map((leader, idx) => {
             const isExpanded = expandedLeader === leader.name;
             return (
