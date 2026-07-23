@@ -159,7 +159,7 @@ export const LOCATIONS: GlobalLocation[] = [
     city: 'Thane',
     country: 'India',
     companyName: 'Trunex BPO Pvt. Ltd.',
-    address: '109, Sapphire Building, Kalyan, Thane, Maharashtra 421301, India',
+    address: '109, 1st floor, Sapphire tycoons, Godrej hill, Kalyan, Thane, Maharashtra 421301, India',
     businessHours: 'Monday – Saturday, 9:00 AM – 6:00 PM (IST)',
     phone: '+91 93211 00206',
     email: 'contact@trunexbpo.com',
